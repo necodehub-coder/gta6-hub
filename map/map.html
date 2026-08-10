@@ -406,10 +406,28 @@ let drag = false;
 let sx = 0;
 
 let sy = 0;
+function clampPosition() {
 
+  const vw = viewport.clientWidth;
+  const vh = viewport.clientHeight;
+
+  const ww = world.offsetWidth * scale;
+  const wh = world.offsetHeight * scale;
+
+  const minX = Math.min(0, vw - ww);
+  const maxX = 0;
+
+  const minY = Math.min(0, vh - wh);
+  const maxY = 0;
+
+  x = Math.max(minX, Math.min(maxX, x));
+  y = Math.max(minY, Math.min(maxY, y));
+}
 
 
 function render() {
+
+  clampPosition();
 
   world.style.transform =
     `translate(${x}px, ${y}px) scale(${scale})`;
