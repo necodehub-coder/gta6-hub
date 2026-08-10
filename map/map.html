@@ -653,7 +653,9 @@ document.onkeydown = e => {
   }
 
 };
-
+document.addEventListener('dblclick', e => {
+    e.preventDefault();
+}, { passive: false });
 </script>
 
 </body>
