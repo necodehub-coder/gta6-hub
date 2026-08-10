@@ -1,1 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<title>GTA VI HUB — Map</title>
+
+<link rel="stylesheet" href="map.css">
+</head>
+
+<body>
+
+<header class="topbar">
+
+  <a class="brand" href="../index.html">
+    GTA <strong>VI</strong>
+    <i>HUB</i>
+  </a>
+
+  <nav>
+    <a href="../index.html">HOME</a>
+    <a class="active" href="map.html">MAP</a>
+    <a href="#">NEWS</a>
+    <a href="#">GUIDES</a>
+    <a href="#">MEDIA</a>
+    <a href="#">ABOUT</a>
+    <span></span>
+    <a href="#">🛍 SHOP</a>
+  </nav>
+
+  <div class="top-icons">
+    ☼　☾　♡　◎
+  </div>
+
+</header>
+
+
+<main class="app">
+
+
+<!-- LEFT FILTER PANEL -->
+
+<aside class="left">
+
+  <h2>FILTERS</h2>
+
+  <label>
+    <em class="pin green">●</em>
+    LOCATIONS
+    <input type="checkbox" data-filter="locations" checked>
+  </label>
+
+  <label>
+    <em class="pin yellow">●</em>
+    VEHICLES
+    <input type="checkbox" data-filter="vehicles" checked>
+  </label>
+
+  <label>
+    <em class="pin red">●</em>
+    WEAPONS
+    <input type="checkbox" data-filter="weapons" checked>
+  </label>
+
+  <label>
+    <em class="pin purple">●</em>
+    MISSIONS
+    <input type="checkbox" data-filter="missions" checked>
+  </label>
+
+  <label>
+    <em class="pin blue">★</em>
+    POINTS OF INTEREST
+    <input type="checkbox" data-filter="poi" checked>
+  </label>
+
+
+  <hr>
+
+
+  <h2>LEGEND</h2>
+
+  <p>
+    <span class="legend-dot green"></span>
+    Locations
+  </p>
+
+  <p>
+    <span class="legend-dot yellow"></span>
+    Vehicles
+  </p>
+
+  <p>
+    <span class="legend-dot red"></span>
+    Weapons
+  </p>
+
+  <p>
+    <span class="legend-dot purple"></span>
+    Missions
+  </p>
+
+  <p>
+    <span class="legend-dot blue"></span>
+    Points of Interest
+  </p>
+
+
+  <div class="tip">
+    <b>✺ TIP</b>
+    <br>
+    <span>
+      Click on any marker to view more details about that location.
+    </span>
+  </div>
+
+</aside>
+
+
+
+<!-- MAP -->
+
+<section class="map-area">
+
+
+  <!-- SEARCH -->
+
+  <div class="search">
+
+    <span>⌕</span>
+
+    <input
+      id="search"
+      placeholder="Search location..."
+    >
+
+    <b>⚱</b>
+
+  </div>
+
+
+
+  <!-- MOVE CONTROLS -->
+
+  <div class="move-controls">
+
+    <button>◀</button>
+    <button>▲</button>
+    <button>▼</button>
+    <button>▶</button>
+
+  </div>
+
+
+
+  <!-- ZOOM -->
+
+  <div class="zoom">
+
+    <button id="plus">+</button>
+    <button id="minus">−</button>
+
+  </div>
+
+
+
+  <!-- INTERACTIVE MAP -->
+
+  <div id="viewport" class="viewport">
+
+    <div id="world" class="world">
+
+      <img
+        src="gta6-map.jpeg"
+        alt="GTA VI Leonida Map"
+      >
+
+
+      <!-- LOCATION -->
+
+      <button
+        class="marker green locations"
+        data-name="Vice City Downtown"
+        data-type="locations"
+        style="left:72%;top:51%"
+      >
+        ●
+      </button>
+
+
+      <!-- VEHICLE -->
+
+      <button
+        class="marker yellow vehicles"
+        data-name="Vehicle Spawn"
+        data-type="vehicles"
+        style="left:64%;top:64%"
+      >
+        ▰
+      </button>
+
+
+      <!-- WEAPON -->
+
+      <button
+        class="marker red weapons"
+        data-name="Weapon Location"
+        data-type="weapons"
+        style="left:56%;top:40%"
+      >
+        ▰
+      </button>
+
+
+      <!-- MISSION -->
+
+      <button
+        class="marker purple missions"
+        data-name="Mission Start"
+        data-type="missions"
+        style="left:32%;top:66%"
+      >
+        ✥
+      </button>
+
+
+      <!-- POINT OF INTEREST -->
+
+      <button
+        class="marker blue poi"
+        data-name="Point of Interest"
+        data-type="poi"
+        style="left:53%;top:26%"
+      >
+        ★
+      </button>
+
+
+      <!-- MORE LOCATIONS -->
+
+      <button
+        class="marker green locations"
+        data-name="Port Location"
+        data-type="locations"
+        style="left:83%;top:35%"
+      >
+        ●
+      </button>
+
+
+      <button
+        class="marker yellow vehicles"
+        data-name="Vehicle Spawn 2"
+        data-type="vehicles"
+        style="left:48%;top:69%"
+      >
+        ▰
+      </button>
+
+
+      <button
+        class="marker purple missions"
+        data-name="Mission Start 2"
+        data-type="missions"
+        style="left:43%;top:48%"
+      >
+        ✥
+      </button>
+
+    </div>
+
+  </div>
+
+
+
+  <!-- MAP TITLE -->
+
+  <div class="map-title">
+
+    <b>VICE CITY</b>
+
+    <small>MAP</small>
+
+  </div>
+
+
+
+  <!-- BOTTOM CONTROLS -->
+
+  <div class="bottom">
+
+    🖱 <b>DRAG</b> Move Map
+
+    🖱 <b>SCROLL</b> Zoom
+
+    <b>CLICK</b> Select Marker
+
+    <kbd>ESC</kbd> Close Panel
+
+  </div>
+
+
+</section>
+
+
+
+<!-- RIGHT INFORMATION PANEL -->
+
+<aside id="panel" class="right">
+
+  <button id="close">×</button>
+
+
+  <div id="photo"></div>
+
+
+  <small id="cat">
+    ● LOCATION
+  </small>
+
+
+  <h1 id="title">
+    VICE CITY<br>
+    DOWNTOWN
+  </h1>
+
+
+  <p id="desc">
+    The heart of Vice City.
+    Business, entertainment and neon lights.
+  </p>
+
+
+  <div class="stats">
+
+    <p>
+      ▦
+      <b>Type</b>
+      <span>Urban</span>
+    </p>
+
+    <p>
+      ♜
+      <b>Faction</b>
+      <span>Various</span>
+    </p>
+
+    <p>
+      ✦
+      <b>Activity</b>
+      <span>High</span>
+    </p>
+
+    <p>
+      ▥
+      <b>Buildings</b>
+      <span>Skyscrapers</span>
+    </p>
+
+  </div>
+
+
+  <button class="details">
+    VIEW DETAILS →
+  </button>
+
+
+  <div class="completion">
+
+    <b>MAP COMPLETION</b>
+
+    <strong>27%</strong>
+
+    <div>
+      <i></i>
+    </div>
+
+  </div>
+
+</aside>
+
+</main>
+
+
+
+<script>
+
+const viewport =
+  document.querySelector('#viewport');
+
+const world =
+  document.querySelector('#world');
+
+const markers =
+  [...document.querySelectorAll('.marker')];
+
+let scale = 1;
+
+let x = 0;
+
+let y = 0;
+
+let drag = false;
+
+let sx = 0;
+
+let sy = 0;
+
+
+
+function render() {
+
+  world.style.transform =
+    `translate(${x}px, ${y}px) scale(${scale})`;
+
+}
+
+
+
+document.querySelector('#plus').onclick = () => {
+
+  scale = Math.min(
+    3,
+    scale + 0.2
+  );
+
+  render();
+
+};
+
+
+
+document.querySelector('#minus').onclick = () => {
+
+  scale = Math.max(
+    0.7,
+    scale - 0.2
+  );
+
+  render();
+
+};
+
+
+
+viewport.onpointerdown = e => {
+
+  drag = true;
+
+  sx = e.clientX - x;
+
+  sy = e.clientY - y;
+
+  viewport.setPointerCapture(
+    e.pointerId
+  );
+
+};
+
+
+
+viewport.onpointermove = e => {
+
+  if (!drag) return;
+
+  x = e.clientX - sx;
+
+  y = e.clientY - sy;
+
+  render();
+
+};
+
+
+
+viewport.onpointerup = () => {
+
+  drag = false;
+
+};
+
+
+
+viewport.onpointercancel = () => {
+
+  drag = false;
+
+};
+
+
+
+viewport.onwheel = e => {
+
+  e.preventDefault();
+
+  scale = Math.max(
+    0.7,
+    Math.min(
+      3,
+      scale + (e.deltaY < 0 ? 0.12 : -0.12)
+    )
+  );
+
+  render();
+
+};
+
+
+
+/* FILTERS */
+
+document
+.querySelectorAll('input[data-filter]')
+.forEach(check => {
+
+  check.onchange = () => {
+
+    markers
+    .filter(
+      marker =>
+      marker.dataset.type ===
+      check.dataset.filter
+    )
+    .forEach(marker => {
+
+      marker.classList.toggle(
+        'off',
+        !check.checked
+      );
+
+    });
+
+  };
+
+});
+
+
+
+/* SEARCH */
+
+document.querySelector('#search')
+.oninput = e => {
+
+  const query =
+    e.target.value
+    .toLowerCase()
+    .trim();
+
+
+  markers.forEach(marker => {
+
+    const name =
+      marker.dataset.name
+      .toLowerCase();
+
+
+    marker.classList.toggle(
+      'off',
+      query &&
+      !name.includes(query)
+    );
+
+  });
+
+};
+
+
+
+/* MARKER INFORMATION */
+
+markers.forEach(marker => {
+
+  marker.onclick = e => {
+
+    e.stopPropagation();
+
+
+    const title =
+      document.querySelector('#title');
+
+    title.innerHTML =
+      marker.dataset.name
+      .replace(
+        ' ',
+        '<br>'
+      );
+
+
+    document.querySelector('#cat')
+      .textContent =
+      '● ' +
+      marker.dataset.type
+      .toUpperCase();
+
+
+    document.querySelector('#desc')
+      .textContent =
+      'A point of interest on the Leonida map. More details can be added here later.';
+
+
+    document
+      .querySelector('#panel')
+      .classList.add('open');
+
+  };
+
+});
+
+
+
+/* CLOSE PANEL */
+
+document.querySelector('#close')
+.onclick = () => {
+
+  document
+    .querySelector('#panel')
+    .classList.remove('open');
+
+};
+
+
+
+/* ESC */
+
+document.onkeydown = e => {
+
+  if (e.key === 'Escape') {
+
+    document
+      .querySelector('#panel')
+      .classList.remove('open');
+
+  }
+
+};
+
+</script>
+
+</body>
+</html>
