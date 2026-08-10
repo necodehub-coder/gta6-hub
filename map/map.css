@@ -1,7 +1,6 @@
 * {
   box-sizing: border-box;
 }
-
 html,
 body {
   margin: 0;
@@ -10,6 +9,7 @@ body {
   color: #fff;
   font-family: Arial, sans-serif;
   overflow: hidden;
+  touch-action: manipulation;
 }
 
 /* HEADER */
