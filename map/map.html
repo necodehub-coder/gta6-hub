@@ -599,7 +599,7 @@ document.querySelector('#search')
 markers.forEach(marker => {
 
   marker.onclick = e => {
-
+    selectedMarker = marker;
     e.stopPropagation();
 
 
@@ -647,7 +647,17 @@ document.querySelector('#close')
 
 };
 
+document.querySelector('#detailsBtn').onclick = () => {
 
+  if (!selectedMarker) return;
+
+  alert(
+    selectedMarker.dataset.name +
+    '\n\n' +
+    selectedMarker.dataset.desc
+  );
+
+};
 
 /* ESC */
 
