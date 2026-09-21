@@ -651,11 +651,19 @@ document.querySelector('#detailsBtn').onclick = () => {
 
   if (!selectedMarker) return;
 
-  alert(
-    selectedMarker.dataset.name +
-    '\n\n' +
-    selectedMarker.dataset.desc
-  );
+  document.querySelector('#detailsTitle').textContent =
+    selectedMarker.dataset.name;
+
+  document.querySelector('#detailsText').textContent =
+    selectedMarker.dataset.desc || 'More details coming soon.';
+
+  document.querySelector('#detailsModal').classList.add('open');
+
+};
+
+document.querySelector('#detailsClose').onclick = () => {
+
+  document.querySelector('#detailsModal').classList.remove('open');
 
 };
 
