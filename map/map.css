@@ -82,7 +82,7 @@ body {
 /* MAIN LAYOUT */
 
 .app {
-  height: calc(100vh - 78px);
+  height: calc(100dvh - 78px);
   display: grid;
   grid-template-columns: 210px 1fr 285px;
 }
