@@ -369,7 +369,7 @@
   </div>
 
 
-  <button class="details">
+  <button id="detailsBtn" class="details">
     VIEW DETAILS →
   </button>
 
@@ -402,6 +402,7 @@ const world =
 
 const markers =
   [...document.querySelectorAll('.marker')];
+  let selectedMarker = null;
 
 let scale = 1;
 
