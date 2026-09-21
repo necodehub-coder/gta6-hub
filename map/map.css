@@ -345,7 +345,7 @@ body {
 .map-title {
   position: absolute;
   z-index: 3;
-  bottom: 70px;
+  bottom: 95px;
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
