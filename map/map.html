@@ -258,6 +258,7 @@
       <button
         class="marker yellow vehicles"
         data-name="Vehicle Spawn 2"
+        data-desc="Another vehicle spawn location waiting to be discovered."
         data-type="vehicles"
         style="left:48%;top:69%"
       >
@@ -268,6 +269,7 @@
       <button
         class="marker purple missions"
         data-name="Mission Start 2"
+        data-desc="Another possible mission starting point."
         data-type="missions"
         style="left:43%;top:48%"
       >
@@ -620,7 +622,7 @@ markers.forEach(marker => {
 
     document.querySelector('#desc')
       .textContent =
-      'A point of interest on the Leonida map. More details can be added here later.';
+      marker.dataset.desc || 'More details coming soon.';
 
 
     document
