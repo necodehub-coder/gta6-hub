@@ -705,6 +705,13 @@ document.addEventListener('dblclick', e => {
 document.querySelector('#detailsClose').onclick = () => {
   document.querySelector('#detailsModal').classList.remove('open');
 };
+    document.querySelector('#detailsModal').onclick = e => {
+
+  if (e.target.id === 'detailsModal') {
+    document.querySelector('#detailsModal').classList.remove('open');
+  }
+
+};
 </script>
 </body>
 </html>
