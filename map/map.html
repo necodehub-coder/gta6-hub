@@ -633,6 +633,9 @@ markers.forEach(marker => {
       .textContent =
       marker.dataset.desc || 'More details coming soon.';
 
+    document.querySelector('#detailsPhoto').style.backgroundImage =
+  `url('${marker.dataset.image}')`;
+
 
     document
       .querySelector('#panel')
