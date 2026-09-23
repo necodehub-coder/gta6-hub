@@ -571,7 +571,7 @@ kbd {
   position: relative;
   width: min(520px, 85%);
   padding: 32px;
-  background: rgba(17, 17, 17, 0.90);
+  background: rgba(17, 17, 17, 0.85);
   border: 1px solid #b52b72;
   box-shadow: 0 0 40px rgba(181,43,114,.35);
 }
@@ -605,7 +605,7 @@ kbd {
 #detailsPhoto {
   width: 90%;
   height: 150px;
-  margin-bottom: 20px;
-  background: url('gta6-map.jpeg') center/cover no-repeat;
+  margin-bottom:0 auto 20px;
+  background: url('gta6-map.jpeg') center/contain no-repeat;
   border: 1px solid rgba(181,43,114,.5);
 }
