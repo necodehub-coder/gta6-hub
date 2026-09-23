@@ -571,7 +571,7 @@ kbd {
   position: relative;
   width: min(520px, 85%);
   padding: 32px;
-  background: #111;
+  background: rgba(17, 17, 17, 0.90);
   border: 1px solid #b52b72;
   box-shadow: 0 0 40px rgba(181,43,114,.35);
 }
