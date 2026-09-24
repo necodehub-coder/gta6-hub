@@ -540,7 +540,39 @@ viewport.onwheel = e => {
   render();
 
 };
+  viewport.onclick = e => {
 
+  if (e.target === viewport) {
+    document
+      .querySelector('#panel')
+      .classList.remove('open');
+  }
+
+};
+/* MAP ARROW CONTROLS */
+
+const moveButtons =
+  document.querySelectorAll('.move-controls button');
+
+moveButtons[0].onclick = () => {
+  x += 80;
+  render();
+};
+
+moveButtons[1].onclick = () => {
+  y += 80;
+  render();
+};
+
+moveButtons[2].onclick = () => {
+  y -= 80;
+  render();
+};
+
+moveButtons[3].onclick = () => {
+  x -= 80;
+  render();
+};
 
 
 /* FILTERS */
@@ -574,32 +606,39 @@ document
 
 /* SEARCH */
 
-document.querySelector('#search')
-.oninput = e => {
+/* SEARCH */
+
+document.querySelector('#search').oninput = e => {
 
   const query =
     e.target.value
-    .toLowerCase()
-    .trim();
-
+      .toLowerCase()
+      .trim();
 
   markers.forEach(marker => {
 
     const name =
-      marker.dataset.name
-      .toLowerCase();
+      marker.dataset.name.toLowerCase();
 
+    const filter =
+      document.querySelector(
+        `input[data-filter="${marker.dataset.type}"]`
+      );
+
+    const matchesSearch =
+      !query || name.includes(query);
+
+    const matchesFilter =
+      filter && filter.checked;
 
     marker.classList.toggle(
       'off',
-      query &&
-      !name.includes(query)
+      !(matchesSearch && matchesFilter)
     );
 
   });
 
 };
-
 
 
 /* MARKER INFORMATION */
@@ -686,6 +725,10 @@ document.onkeydown = e => {
 
     document
       .querySelector('#panel')
+      .classList.remove('open');
+
+    document
+      .querySelector('#detailsModal')
       .classList.remove('open');
 
   }
