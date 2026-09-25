@@ -540,16 +540,7 @@ viewport.onwheel = e => {
   render();
 
 };
-  viewport.onclick = e => {
-
-  if (e.target === viewport) {
-    document
-      .querySelector('#panel')
-      .classList.remove('open');
-  }
-
-};
-/* MAP ARROW CONTROLS */
+  /* MOVE CONTROLS */
 
 const moveButtons =
   document.querySelectorAll('.move-controls button');
@@ -573,6 +564,50 @@ moveButtons[3].onclick = () => {
   x -= 80;
   render();
 };
+  viewport.onclick = e => {
+
+  if (e.target === viewport) {
+    document
+      .querySelector('#panel')
+      .classList.remove('open');
+  }
+
+};
+/* MAP ARROW CONTROLS */
+
+const moveButtons =
+  document.querySelectorAll('.move-controls button');
+
+function moveMap(dx, dy) {
+
+  if (scale === 1) {
+    scale = 1.2;
+  }
+
+  x += dx;
+  y += dy;
+
+  render();
+
+}
+
+moveButtons[0].onclick = () => {
+  moveMap(-80, 0);
+};
+
+moveButtons[1].onclick = () => {
+  moveMap(0, -80);
+};
+
+moveButtons[2].onclick = () => {
+  moveMap(0, 80);
+};
+
+moveButtons[3].onclick = () => {
+  moveMap(80, 0);
+};
+
+
 
 
 /* FILTERS */
