@@ -669,6 +669,9 @@ markers.forEach(marker => {
 
     document.querySelector('#detailsPhoto').style.backgroundImage =
   `url('${marker.dataset.image}')`;
+    document.querySelector('#detailsPhoto').style.backgroundSize = 'contain';
+document.querySelector('#detailsPhoto').style.backgroundPosition = 'center';
+document.querySelector('#detailsPhoto').style.backgroundRepeat = 'no-repeat';
 
 
     document
