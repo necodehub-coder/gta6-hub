@@ -139,21 +139,6 @@
 
   </div>
 
-
-
-  <!-- MOVE CONTROLS -->
-
-  <div class="move-controls">
-
-    <button>◀</button>
-    <button>▲</button>
-    <button>▼</button>
-    <button>▶</button>
-
-  </div>
-
-
-
   <!-- ZOOM -->
 
   <div class="zoom">
@@ -547,39 +532,7 @@ viewport.onwheel = e => {
   render();
 
 };
-  /* MOVE CONTROLS */
 
-const moveButtons =
-  document.querySelectorAll('.move-controls button');
-
-moveButtons[0].onclick = () => {
-  x += 80;
-  render();
-};
-
-moveButtons[1].onclick = () => {
-  y += 80;
-  render();
-};5
-
-moveButtons[2].onclick = () => {
-  y -= 80;
-  render();
-};
-
-moveButtons[3].onclick = () => {
-  x -= 80;
-  render();
-};
-  viewport.onclick = e => {
-
-  if (e.target === viewport) {
-    document
-      .querySelector('#panel')
-      .classList.remove('open');
-  }
-
-};
 /* MAP ARROW CONTROLS */
 
 const moveButtons =
