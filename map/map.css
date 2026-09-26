@@ -605,7 +605,7 @@ kbd {
 #detailsPhoto {
   width: 90%;
   height: 260px;
-  margin-bottom:0 auto 20px;
+  margin: 0 auto 20px;
   background: url('gta6-map.jpeg') center/contain no-repeat;
   border: 1px solid rgba(181,43,114,.5);
 }
