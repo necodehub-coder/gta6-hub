@@ -835,6 +835,14 @@ markers.forEach((marker, index) => {
 
 // Inicijalno postavi procenat
 updateCompletion();
+    /* ===== RESET PROGRESS ===== */
+
+document.querySelector('#resetBtn').onclick = () => {
+  localStorage.removeItem('gta6_visited_markers');
+  visitedMarkers.clear();
+  updateCompletion();
+  document.querySelector('#panel').classList.remove('open');
+};
 </script>
 </body>
 </html>
