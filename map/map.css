@@ -309,7 +309,6 @@ body {
   cursor: pointer;
   font-size: 13px;
   font-weight: bold;
-  box-shadow: 0 0 12px #000;
   animation: pulse 2s infinite;
 }
 
