@@ -677,10 +677,33 @@ document.querySelector('#detailsPhoto').style.backgroundRepeat = 'no-repeat';
     document
       .querySelector('#panel')
       .classList.add('open');
+    centerOnMarker(marker);
 
   };
 
 });
+  /* ===== ZOOM TO MARKER ===== */
+
+function centerOnMarker(marker) {
+  const leftPercent = parseFloat(marker.style.left) / 100;
+  const topPercent = parseFloat(marker.style.top) / 100;
+
+  const ww = world.offsetWidth;
+  const wh = world.offsetHeight;
+
+  const markerX = ww * leftPercent;
+  const markerY = wh * topPercent;
+
+  scale = 1.5;
+
+  const vw = viewport.clientWidth;
+  const vh = viewport.clientHeight;
+
+  x = (vw / 2) - (markerX * scale);
+  y = (vh / 2) - (markerY * scale);
+
+  render();
+}
 
 
 
