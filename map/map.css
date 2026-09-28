@@ -638,3 +638,26 @@ kbd {
   background: url('gta6-map.jpeg') center/contain no-repeat;
   border: 1px solid rgba(181,43,114,.5);
 }
+.reset-btn {
+  width: 100%;
+  background: transparent;
+  color: #ff4ca4;
+  border: 1px solid rgba(255, 76, 164, 0.5);
+  border-radius: 5px;
+  padding: 10px;
+  font-weight: 900;
+  font-size: 11px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: 0.2s;
+}
+
+.reset-btn:hover {
+  background: rgba(255, 76, 164, 0.15);
+  border-color: #ff4ca4;
+}
+
+.reset-btn:active {
+  transform: scale(0.97);
+}
