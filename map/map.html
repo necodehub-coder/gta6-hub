@@ -845,6 +845,23 @@ document.querySelector('#resetBtn').onclick = () => {
   updateCompletion();
   document.querySelector('#panel').classList.remove('open');
 };
+    /* ===== THEME TOGGLE ===== */
+
+document.querySelector('#themeLight').onclick = () => {
+  document.body.classList.add('light-theme');
+  localStorage.setItem('gta6_theme', 'light');
+};
+
+document.querySelector('#themeDark').onclick = () => {
+  document.body.classList.remove('light-theme');
+  localStorage.setItem('gta6_theme', 'dark');
+};
+
+// Učitaj sačuvanu temu pri otvaranju
+if (localStorage.getItem('gta6_theme') === 'light') {
+  document.body.classList.add('light-theme');
+}
+    
 </script>
 </body>
 </html>
