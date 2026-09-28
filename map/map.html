@@ -791,8 +791,11 @@ document.querySelector('#detailsClose').onclick = () => {
 
     /* ===== MAP COMPLETION TRACKER ===== */
 
-// Napravi listu otvorenih markera
-const visitedMarkers = new Set();
+/* ===== MAP COMPLETION TRACKER ===== */
+
+// Učitaj posećene markere iz localStorage
+const savedMarkers = localStorage.getItem('gta6_visited_markers');
+const visitedMarkers = new Set(savedMarkers ? JSON.parse(savedMarkers) : []);
 
 // Funkcija za ažuriranje procenta
 function updateCompletion() {
@@ -821,11 +824,15 @@ markers.forEach((marker, index) => {
     }
 
     visitedMarkers.add(index);
+
+    // Sačuvaj u localStorage
+    localStorage.setItem('gta6_visited_markers', JSON.stringify([...visitedMarkers]));
+
     updateCompletion();
   };
 });
 
-// Inicijalno postavi na 0%
+// Inicijalno postavi procenat
 updateCompletion();
 </script>
 </body>
