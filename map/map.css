@@ -172,7 +172,8 @@ body {
   border-radius: 7px;
   padding: 14px;
   color: #ff4ca4;
-  font-size: 12px;
+  font-size: 12px; 
+  
 }
 
 .tip span {
@@ -360,8 +361,12 @@ body {
   display: block;
   font-size: 32px;
   color: #ff4ca4;
+  text-shadow: 
+    0 0 10px rgba(255, 76, 164, 0.8),
+    0 0 20px rgba(255, 76, 164, 0.6),
+    0 0 40px rgba(255, 76, 164, 0.4);
+  letter-spacing: 2px;
 }
-
 .map-title small {
   font-size: 14px;
   letter-spacing: 3px;
