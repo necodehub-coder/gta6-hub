@@ -310,8 +310,20 @@ body {
   font-size: 13px;
   font-weight: bold;
   box-shadow: 0 0 12px #000;
+  animation: pulse 2s infinite;
 }
 
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 76, 164, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 15px rgba(255, 76, 164, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(255, 76, 164, 0);
+  }
+}
 .marker:hover {
   transform: translate(-50%, -50%) scale(1.25);
 }
