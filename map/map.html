@@ -765,6 +765,45 @@ document.querySelector('#detailsClose').onclick = () => {
   }
 
 };
+
+    /* ===== MAP COMPLETION TRACKER ===== */
+
+// Napravi listu otvorenih markera
+const visitedMarkers = new Set();
+
+// Funkcija za ažuriranje procenta
+function updateCompletion() {
+  const total = markers.length;
+  const visited = visitedMarkers.size;
+  const percent = Math.round((visited / total) * 100);
+
+  const percentText = document.querySelector('.completion strong');
+  if (percentText) {
+    percentText.textContent = percent + '%';
+  }
+
+  const bar = document.querySelector('.completion i');
+  if (bar) {
+    bar.style.width = percent + '%';
+  }
+}
+
+// Kada se klikne na marker, dodaj ga u listu posećenih
+markers.forEach((marker, index) => {
+  const originalOnclick = marker.onclick;
+
+  marker.onclick = (e) => {
+    if (originalOnclick) {
+      originalOnclick.call(marker, e);
+    }
+
+    visitedMarkers.add(index);
+    updateCompletion();
+  };
+});
+
+// Inicijalno postavi na 0%
+updateCompletion();
 </script>
 </body>
 </html>
