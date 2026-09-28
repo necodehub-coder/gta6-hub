@@ -661,3 +661,93 @@ kbd {
 .reset-btn:active {
   transform: scale(0.97);
 }
+/* ===== LIGHT THEME ===== */
+
+body.light-theme {
+  background: #f0f0f0;
+  color: #111;
+}
+
+body.light-theme .topbar {
+  background: #ffffff;
+  border-bottom: 1px solid #ddd;
+}
+
+body.light-theme .brand {
+  color: #111;
+}
+
+body.light-theme .topbar nav a {
+  color: #555;
+}
+
+body.light-theme .topbar nav a.active {
+  color: #ff4ca4;
+}
+
+body.light-theme .left,
+body.light-theme .right {
+  background: rgba(255, 255, 255, 0.85);
+  color: #111;
+  border-color: rgba(255, 76, 164, 0.3);
+}
+
+body.light-theme .left h2,
+body.light-theme .right small {
+  color: #ff4ca4;
+}
+
+body.light-theme .left label {
+  color: #333;
+}
+
+body.light-theme .search {
+  background: rgba(255, 255, 255, 0.9);
+  color: #111;
+}
+
+body.light-theme .search input {
+  color: #111;
+}
+
+body.light-theme .move-controls,
+body.light-theme .zoom button {
+  background: rgba(255, 255, 255, 0.9);
+  color: #ff4ca4;
+}
+
+body.light-theme .bottom {
+  background: rgba(255, 255, 255, 0.9);
+  color: #555;
+  border-top-color: rgba(255, 76, 164, 0.3);
+}
+
+body.light-theme .stats p {
+  color: #68dc4c;
+}
+
+body.light-theme .stats span {
+  color: #333;
+}
+
+body.light-theme .completion {
+  color: #ff4ca4;
+  border-color: #ddd;
+}
+
+body.light-theme .completion strong {
+  color: #111;
+}
+
+body.light-theme .tip {
+  color: #ff4ca4;
+  border-color: #ff4ca4;
+}
+
+body.light-theme .tip span {
+  color: #555;
+}
+
+body.light-theme .map-title small {
+  color: #111;
+}
