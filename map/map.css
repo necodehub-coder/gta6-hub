@@ -820,3 +820,41 @@ body.light-theme .search input::placeholder {
 body.light-theme .search {
   color: #111;
 }
+/* ===== LIGHT THEME - TEXT COLORS (FORCED) ===== */
+
+body.light-theme .right > p,
+body.light-theme #desc {
+  color: #333 !important;
+}
+
+body.light-theme .stats span {
+  color: #222 !important;
+}
+
+body.light-theme .stats b {
+  color: #111 !important;
+}
+
+body.light-theme .left > p {
+  color: #333 !important;
+}
+
+body.light-theme .left label {
+  color: #222 !important;
+}
+
+body.light-theme .tip span {
+  color: #444 !important;
+}
+
+body.light-theme .bottom {
+  color: #444 !important;
+}
+
+body.light-theme #title {
+  color: #111 !important;
+}
+
+body.light-theme .completion strong {
+  color: #111 !important;
+}
