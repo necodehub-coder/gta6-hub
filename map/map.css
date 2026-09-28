@@ -268,9 +268,11 @@ body {
   width: 36px;
   height: 36px;
   background: none;
-  color: white;
+  color: #ff4ca4;
   border: 0;
   font-size: 17px;
+  cursor: pointer;
+  transition: 0.2s;
 }
 
 .zoom {
@@ -280,18 +282,18 @@ body {
   left: 29px;
   display: flex;
   flex-direction: column;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
 }
-
 .zoom button {
   width: 46px;
   height: 44px;
-  background: #071016dd;
-  border: 1px solid #344149;
+  background: rgba(7, 16, 22, 0.85);
+  border: 1px solid rgba(255, 76, 164, 0.4);
   color: #fff;
   font-size: 25px;
+  cursor: pointer;
+  backdrop-filter: blur(4px);
 }
-
-
 /* MARKERS */
 
 .marker {
