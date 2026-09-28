@@ -91,8 +91,9 @@ body {
 /* LEFT PANEL */
 
 .left {
-  background: #070d12;
-  border-right: 1px solid #26323a;
+  background: rgba(7, 13, 18, 0.75);
+  backdrop-filter: blur(12px);
+  border-right: 1px solid rgba(255, 76, 164, 0.2);
   padding: 22px 18px;
   z-index: 3;
 }
