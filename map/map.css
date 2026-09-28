@@ -751,3 +751,72 @@ body.light-theme .tip span {
 body.light-theme .map-title small {
   color: #111;
 }
+/* ===== LIGHT THEME - TEXT COLORS ===== */
+
+body.light-theme .right > p {
+  color: #333;
+}
+
+body.light-theme .right #desc {
+  color: #333;
+}
+
+body.light-theme .stats p {
+  color: #2a7a1a;
+}
+
+body.light-theme .stats span {
+  color: #222;
+}
+
+body.light-theme .stats b {
+  color: #111;
+}
+
+body.light-theme .completion {
+  color: #ff4ca4;
+}
+
+body.light-theme .completion strong {
+  color: #111;
+}
+
+body.light-theme .left > p {
+  color: #333;
+}
+
+body.light-theme .left label {
+  color: #222;
+}
+
+body.light-theme .legend-dot {
+  border: 1px solid rgba(0,0,0,0.15);
+}
+
+body.light-theme .tip span {
+  color: #444;
+}
+
+body.light-theme .bottom {
+  color: #444;
+}
+
+body.light-theme .bottom b {
+  color: #d63384;
+}
+
+body.light-theme #title {
+  color: #111;
+}
+
+body.light-theme #cat {
+  color: #2a7a1a;
+}
+
+body.light-theme .search input::placeholder {
+  color: #888;
+}
+
+body.light-theme .search {
+  color: #111;
+}
