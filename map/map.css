@@ -831,33 +831,3 @@ body.light-theme #title {
 body.light-theme .completion strong {
   color: #111 !important;
 }
-.reset-view {
-  position: absolute;
-  z-index: 4;
-  top: 260px;
-  left: 29px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
-}
-.reset-view button {
-  width: 46px;
-  height: 44px;
-  background: rgba(7, 16, 22, 0.85);
-  border: 1px solid rgba(255, 76, 164, 0.4);
-  color: #fff;
-  font-size: 22px;
-  cursor: pointer;
-  backdrop-filter: blur(4px);
-  transition: 0.2s;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.reset-view button:hover {
-  background: rgba(255, 76, 164, 0.15);
-  border-color: #ff4ca4;
-}
-
-.reset-view button:active {
-  transform: scale(0.95);
-}
