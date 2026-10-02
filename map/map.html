@@ -149,9 +149,7 @@
     <button id="minus">−</button>
 
   </div>
-  <div class="reset-view">
-  <button id="resetView" title="Reset view">↺</button>
-
+  
 
   <!-- INTERACTIVE MAP -->
 
@@ -1030,15 +1028,7 @@ viewport.addEventListener('touchmove', e => {
   }
 }, { passive: false });
 
-    /* ===== RESET VIEW ===== */
-
-document.querySelector('#resetView').onclick = () => {
-  scale = 1;
-  x = 0;
-  y = 0;
-  render();
-};
-    
+  
 </script>
 </body>
 </html>
