@@ -151,17 +151,17 @@
   </div>
 
 
-
   <!-- INTERACTIVE MAP -->
 
   <div id="viewport" class="viewport">
+    
     <!-- MOVE CONTROLS -->
     <div class="move-controls">
-      <button class="move-up">▲</button>
-      <button class="move-left">◀</button>
-      <button class="move-right">▶</button>
-      <button class="move-down">▼</button>
-    </div>
+  <button class="move-left">◀</button>
+  <button class="move-up">▲</button>
+  <button class="move-down">▼</button>
+  <button class="move-right">▶</button>
+</div>
 
     <div id="world" class="world">
 
@@ -732,23 +732,21 @@ function moveMap(dx, dy) {
   render();
 
 }
-
 moveButtons[0].onclick = () => {
-  moveMap(-80, 0);
+  moveMap(0, -80);   // ▲ GORE
 };
 
 moveButtons[1].onclick = () => {
-  moveMap(0, -80);
+  moveMap(-80, 0);   // ◀ LEVO
 };
 
 moveButtons[2].onclick = () => {
-  moveMap(0, 80);
+  moveMap(80, 0);    // ▶ DESNO
 };
 
 moveButtons[3].onclick = () => {
-  moveMap(80, 0);
+  moveMap(0, 80);    // ▼ DOLE
 };
-
 
 
 
