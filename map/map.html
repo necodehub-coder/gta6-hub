@@ -1030,6 +1030,15 @@ viewport.addEventListener('touchmove', e => {
     render();
   }
 }, { passive: false });
+
+    /* ===== RESET VIEW ===== */
+
+document.querySelector('#resetView').onclick = () => {
+  scale = 1;
+  x = 0;
+  y = 0;
+  render();
+};
     
 </script>
 </body>
