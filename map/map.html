@@ -848,6 +848,14 @@ markers.forEach(marker => {
     document.querySelector('#desc')
       .textContent =
       marker.dataset.desc || 'More details coming soon.';
+    // Ažuriraj stats podatke
+    const stats = document.querySelectorAll('.stats p');
+    if (stats.length >= 4) {
+      stats[0].querySelector('span').textContent = marker.dataset.statType || 'Urban';
+      stats[1].querySelector('span').textContent = marker.dataset.statFaction || 'Various';
+      stats[2].querySelector('span').textContent = marker.dataset.statActivity || 'High';
+      stats[3].querySelector('span').textContent = marker.dataset.statBuildings || 'Skyscrapers';
+    }
 
     document.querySelector('#detailsPhoto').style.backgroundImage =
   `url('${marker.dataset.image}')`;
