@@ -709,40 +709,6 @@ viewport.onwheel = e => {
 
 };
 
-/* MAP ARROW CONTROLS */
-
-const moveButtons =
-  document.querySelectorAll('.move-controls button');
-
-function moveMap(dx, dy) {
-
-  if (scale === 1) {
-    scale = 1.2;
-  }
-
-  x += dx;
-  y += dy;
-
-  render();
-
-}
-moveButtons[0].onclick = () => {
-  moveMap(0, -80);   // ▲ GORE
-};
-
-moveButtons[1].onclick = () => {
-  moveMap(-80, 0);   // ◀ LEVO
-};
-
-moveButtons[2].onclick = () => {
-  moveMap(80, 0);    // ▶ DESNO
-};
-
-moveButtons[3].onclick = () => {
-  moveMap(0, 80);    // ▼ DOLE
-};
-
-
 
 /* FILTERS */
 
