@@ -254,6 +254,7 @@ body {
 
 
 /* MAP CONTROLS */
+
 .move-controls {
   position: absolute;
   z-index: 4;
@@ -266,11 +267,7 @@ body {
   border-radius: 50%;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
   backdrop-filter: blur(4px);
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
-
 .move-controls button {
   position: absolute;
   width: 36px;
