@@ -834,13 +834,10 @@ body.light-theme .completion strong {
 .reset-view {
   position: absolute;
   z-index: 4;
-  top: 255px;
+  top: 260px;
   left: 29px;
-  display: flex;
-  flex-direction: column;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
 }
-
 .reset-view button {
   width: 46px;
   height: 44px;
@@ -851,6 +848,9 @@ body.light-theme .completion strong {
   cursor: pointer;
   backdrop-filter: blur(4px);
   transition: 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .reset-view button:hover {
