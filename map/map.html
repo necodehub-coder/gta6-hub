@@ -664,15 +664,10 @@ viewport.onpointerdown = e => {
 
 
 viewport.onpointermove = e => {
-
   if (!drag) return;
-
-  x = (e.clientX - sx) * 0.45;
-
-  y = (e.clientY - sy) * 0.45;
-
+  x = e.clientX - sx;
+  y = e.clientY - sy;
   render();
-
 };
 
 
