@@ -259,14 +259,16 @@ body {
   z-index: 4;
   top: 78px;
   left: 28px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  width: 110px;
+  height: 110px;
   background: rgba(7, 16, 22, 0.85);
   border: 1px solid rgba(255, 76, 164, 0.4);
-  border-radius: 40px;
-  padding: 8px;
+  border-radius: 50%;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
   backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .move-controls button {
