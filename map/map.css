@@ -270,15 +270,29 @@ body {
 }
 
 .move-controls button {
+  position: absolute;
   width: 36px;
   height: 36px;
   background: none;
   color: #ff4ca4;
   border: 0;
-  font-size: 17px;
+  font-size: 19px;
   cursor: pointer;
   transition: 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
+.move-controls button:active {
+  transform: scale(0.85);
+}
+
+/* Pozicije strelica u krugu */
+.move-controls button:nth-child(1) { top: 8px; left: 50%; transform: translateX(-50%); }
+.move-controls button:nth-child(2) { left: 8px; top: 50%; transform: translateY(-50%); }
+.move-controls button:nth-child(3) { right: 8px; top: 50%; transform: translateY(-50%); }
+.move-controls button:nth-child(4) { bottom: 8px; left: 50%; transform: translateX(-50%); }
 
 .zoom {
   position: absolute;
