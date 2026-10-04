@@ -450,3 +450,109 @@ button:hover{
   color: #ff2cc4;
   letter-spacing: 1.5px;
 }
+/* CARDS AND PHONE LAYOUT */
+.cards-and-phone {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 25px;
+  align-items: start;
+}
+
+/* PHONE MOCKUP */
+.phone-mockup {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+.phone-frame {
+  width: 240px;
+  height: 480px;
+  background: #1a1a1a;
+  border-radius: 35px;
+  padding: 10px;
+  box-shadow: 0 20px 60px rgba(255, 76, 164, 0.3), 0 0 0 2px rgba(255, 76, 164, 0.3);
+  position: relative;
+}
+
+.phone-screen {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(160deg, #1a0a2e, #ff4ca4);
+  border-radius: 28px;
+  padding: 30px 15px 15px;
+  position: relative;
+  overflow: hidden;
+}
+
+.phone-notch {
+  position: absolute;
+  top: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 6px;
+  background: #000;
+  border-radius: 3px;
+}
+
+.phone-time {
+  position: absolute;
+  top: 12px;
+  right: 20px;
+  font-size: 9px;
+  color: #fff;
+  opacity: 0.8;
+}
+
+.phone-title {
+  font-size: 16px;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.phone-apps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.phone-app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.phone-app span {
+  width: 42px;
+  height: 42px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+}
+
+.phone-app small {
+  font-size: 8px;
+  color: #fff;
+  opacity: 0.9;
+}
+
+/* Smanji kartice malo */
+.card img {
+  height: 100px;
+}
+
+.card-content h3 {
+  font-size: 13px;
+}
+
+.card-content {
+  padding: 10px 12px 14px;
+}
