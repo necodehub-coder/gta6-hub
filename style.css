@@ -12,7 +12,7 @@ body{
 
 
 .hero{
-    min-height: 60vh;
+    min-height: 85vh;
     display:flex;
     flex-direction:column;
     justify-content:center;
@@ -373,10 +373,10 @@ button:hover{
 /* CARDS SECTION */
 .cards-section {
   padding: 40px 30px;
-  background: #0b0b0f;
-  margin-top: -40px;
+  margin-top: -180px;
   position: relative;
-  z-index: 2;
+  z-index: 5;
+  background: transparent;
 }
 
 .cards-grid {
@@ -385,15 +385,18 @@ button:hover{
   gap: 20px;
 }
 
+
 .card {
-  background: #11131a;
-  border: 1px solid #1a1a1a;
-  border-radius: 10px;
+  background: rgba(17, 19, 26, 0.7);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 76, 164, 0.2);
+  border-radius: 12px;
   overflow: hidden;
   transition: 0.3s;
   position: relative;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
 }
-
 .card:hover {
   transform: translateY(-5px);
   border-color: rgba(255, 76, 164, 0.5);
