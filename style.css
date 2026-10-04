@@ -19,6 +19,7 @@ body{
     align-items:center;
     text-align:center;
     padding:60px 20px;
+    position: relative;
 
     background:
     linear-gradient(rgba(0,0,0,.65), rgba(0,0,0,.75)),
@@ -452,18 +453,16 @@ button:hover{
 }
 /* CARDS AND PHONE LAYOUT */
 .cards-and-phone {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  gap: 25px;
-  align-items: start;
+  display: block;
 }
 
 /* PHONE MOCKUP */
 .phone-mockup {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  padding: 20px 0;
+  position: absolute;
+  top: 50%;
+  right: -20px;
+  transform: translateY(-50%) rotate(8deg);
+  z-index: 10;
 }
 .phone-frame {
   width: 220px;
