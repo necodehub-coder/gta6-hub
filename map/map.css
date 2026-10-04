@@ -831,3 +831,7 @@ body.light-theme #title {
 body.light-theme .completion strong {
   color: #111 !important;
 }
+/* Pauziraj pulsiranje markera tokom drag-a */
+body.dragging .marker {
+  animation-play-state: paused;
+}
