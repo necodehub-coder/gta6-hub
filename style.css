@@ -11,34 +11,38 @@ body{
 }
 
 
-.hero{
-    min-height: 85vh;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
-    padding:60px 20px;
-    position: relative;
+.hero {
+  position: relative;
+  min-height: 85vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-align: left;
+  padding: 120px 60px 60px;
 
-    background:
+  background:
     linear-gradient(rgba(0,0,0,.65), rgba(0,0,0,.75)),
     url("829FAF68-1581-4793-B1B5-91677BBCD508.png");
 
-    background-size:cover;
-    background-position:center;
+  background-size: cover;
+  background-position: center;
 }
 
-.hero h1{
-    font-size:64px;
-    margin-bottom:20px;
+.hero h1 {
+  font-size: 42px;
+  margin-bottom: 15px;
+  max-width: 500px;
+  line-height: 1.1;
+  text-transform: uppercase;
 }
 
-.hero p{
-    font-size:22px;
-    max-width:700px;
-    color:#bbbbbb;
-    margin-bottom:40px;
+.hero p {
+  font-size: 15px;
+  max-width: 400px;
+  color: #bbbbbb;
+  margin-bottom: 30px;
+  text-align: left;
 }
 
 button{
@@ -374,7 +378,7 @@ button:hover{
 /* CARDS SECTION */
 .cards-section {
   padding: 20px 20px;
-  margin-top: -180px;
+  margin-top: -150px;
   position: relative;
   z-index: 5;
   background: transparent;
@@ -465,8 +469,8 @@ button:hover{
   z-index: 10;
 }
 .phone-frame {
-  width: 220px;
-  height: 440px;
+  width: 170px;
+  height: 340px;
   background: #1a1a1a;
   border-radius: 35px;
   padding: 10px;
