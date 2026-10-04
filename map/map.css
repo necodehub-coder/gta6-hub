@@ -208,6 +208,8 @@ body {
   inset: 0;
   transform-origin: center;
   will-change: transform;
+  backface-visibility: hidden;
+  perspective: 1000px;
 }
 .world img {
   width: 100%;
@@ -287,6 +289,7 @@ body {
   font-size: 13px;
   font-weight: bold;
   animation: pulse 2s infinite;
+  backface-visibility: hidden;
 }
 
 @keyframes pulse {
