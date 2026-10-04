@@ -291,3 +291,82 @@ button:hover{
   color: #fff;
   box-shadow: 0 4px 15px rgba(255, 76, 164, 0.3);
 }
+/* TOP BAR INFO */
+.topbar-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: #0d0d12;
+  border-bottom: 1px solid #1a1a1a;
+}
+
+.greeting small {
+  display: block;
+  font-size: 10px;
+  color: #666;
+  letter-spacing: 1.5px;
+  margin-bottom: 3px;
+}
+
+.greeting span {
+  font-size: 14px;
+  color: #fff;
+  font-weight: 700;
+}
+
+.info-items {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.info-item .icon {
+  font-size: 20px;
+}
+
+.info-item strong {
+  display: block;
+  font-size: 13px;
+  color: #fff;
+}
+
+.info-item small {
+  display: block;
+  font-size: 9px;
+  color: #666;
+  letter-spacing: 1px;
+}
+
+.info-item.money strong {
+  color: #4cff7c;
+  font-size: 16px;
+  font-family: 'Courier New', monospace;
+}
+
+.avatar {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #ff4ca4, #b52b72);
+  border: 2px solid rgba(255, 76, 164, 0.5);
+  position: relative;
+}
+
+.avatar::after {
+  content: '';
+  position: absolute;
+  top: -2px;
+  right: -2px;
+  width: 10px;
+  height: 10px;
+  background: #4cff7c;
+  border-radius: 50%;
+  border: 2px solid #0d0d12;
+}
