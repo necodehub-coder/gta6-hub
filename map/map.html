@@ -796,12 +796,17 @@ markers.forEach(marker => {
       stats[3].querySelector('span').textContent = marker.dataset.statBuildings || 'Skyscrapers';
     }
 
-    document.querySelector('#detailsPhoto').style.backgroundImage =
-  `url('${marker.dataset.image}')`;
-    document.querySelector('#detailsPhoto').style.backgroundSize = 'contain';
-document.querySelector('#detailsPhoto').style.backgroundPosition = 'center';
-document.querySelector('#detailsPhoto').style.backgroundRepeat = 'no-repeat';
-
+    // Lazy loading slike
+    const detailsPhoto = document.querySelector('#detailsPhoto');
+    detailsPhoto.style.backgroundImage = 'none';
+    const img = new Image();
+    img.onload = () => {
+      detailsPhoto.style.backgroundImage = `url('${marker.dataset.image}')`;
+      detailsPhoto.style.backgroundSize = 'contain';
+      detailsPhoto.style.backgroundPosition = 'center';
+      detailsPhoto.style.backgroundRepeat = 'no-repeat';
+    };
+    img.src = marker.dataset.image;
 
     document
       .querySelector('#panel')
