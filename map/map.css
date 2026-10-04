@@ -207,6 +207,7 @@ body {
   position: absolute;
   inset: 0;
   transform-origin: center;
+  will-change: transform;
 }
 .world img {
   width: 100%;
