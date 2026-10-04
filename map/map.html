@@ -648,19 +648,12 @@ document.querySelector('#minus').onclick = () => {
 
 
 viewport.onpointerdown = e => {
-
   drag = true;
-
+  document.body.classList.add('dragging');  // <-- DODAJ OVO
   sx = e.clientX - x;
-
   sy = e.clientY - y;
-
-  viewport.setPointerCapture(
-    e.pointerId
-  );
-
+  viewport.setPointerCapture(e.pointerId);
 };
-
 
 
 viewport.onpointermove = e => {
@@ -671,21 +664,10 @@ viewport.onpointermove = e => {
 };
 
 
-
 viewport.onpointerup = () => {
-
   drag = false;
-
+  document.body.classList.remove('dragging');  // <-- DODAJ OVO
 };
-
-
-
-viewport.onpointercancel = () => {
-
-  drag = false;
-
-};
-
 
 
 viewport.onwheel = e => {
@@ -699,6 +681,10 @@ viewport.onwheel = e => {
       scale + (e.deltaY < 0 ? 0.12 : -0.12)
     )
   );
+  viewport.onpointercancel = () => {
+  drag = false;
+  document.body.classList.remove('dragging');  // <-- DODAJ OVO
+};
 
   render();
 
