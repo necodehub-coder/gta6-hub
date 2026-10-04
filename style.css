@@ -10,38 +10,6 @@ body{
     font-family:Arial, sans-serif;
 }
 
-header{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:20px 60px;
-    background:#11131a;
-    border-bottom:1px solid #222;
-    position:sticky;
-    top:0;
-    z-index:1000;
-}
-
-.logo{
-    font-size:32px;
-    font-weight:bold;
-    color:#ff4fd8;
-}
-
-nav{
-    display:flex;
-    gap:30px;
-}
-
-nav a{
-    color:white;
-    text-decoration:none;
-    transition:.3s;
-}
-
-nav a:hover{
-    color:#ff4fd8;
-}
 
 .hero{
     min-height:85vh;
@@ -150,4 +118,90 @@ button:hover{
 
 .read-more:hover{
     text-decoration:underline;
+}
+/* LAYOUT */
+.app-layout {
+  display: flex;
+  min-height: 100vh;
+}
+
+.sidebar {
+  width: 220px;
+  background: #0a0a0a;
+  border-right: 1px solid #1a1a1a;
+  padding: 25px 15px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  overflow-y: auto;
+  z-index: 10;
+}
+
+.main-content {
+  margin-left: 220px;
+  width: calc(100% - 220px);
+  min-height: 100vh;
+}
+
+/* SIDEBAR BRAND */
+.sidebar-brand {
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+  padding: 0 10px 25px;
+  border-bottom: 1px solid #1a1a1a;
+  margin-bottom: 20px;
+}
+
+.brand-small {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.brand-large {
+  color: #ff4ca4;
+  font-size: 26px;
+  font-weight: 900;
+  font-style: italic;
+}
+
+/* SIDEBAR NAV */
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.sidebar-nav a {
+  color: #aaa;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 700;
+  padding: 12px 14px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  transition: 0.2s;
+  letter-spacing: 0.5px;
+}
+
+.sidebar-nav a span {
+  font-size: 16px;
+  width: 20px;
+  text-align: center;
+}
+
+.sidebar-nav a:hover {
+  background: rgba(255, 76, 164, 0.08);
+  color: #fff;
+}
+
+.sidebar-nav a.active {
+  background: linear-gradient(90deg, #ff4ca4, #b52b72);
+  color: #fff;
+  box-shadow: 0 4px 15px rgba(255, 76, 164, 0.3);
 }
