@@ -461,16 +461,10 @@ button:hover{
 /* PHONE MOCKUP */
 .phone-mockup {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: flex-start;
-  padding: 0;
-  margin-top: -250px;
-  margin-right: -40px;
-  transform: rotate(8deg);
-  position: relative;
-  z-index: 10;
+  padding: 20px 0;
 }
-
 .phone-frame {
   width: 220px;
   height: 440px;
