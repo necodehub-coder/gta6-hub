@@ -397,18 +397,18 @@ button:hover{
   box-shadow: 0 20px 60px rgba(255, 76, 164, 0.3), 0 0 0 2px rgba(255, 76, 164, 0.3);
   position: relative;
 }
-
 .phone-screen {
   width: 100%;
   height: 100%;
   background:
-    linear-gradient(rgba(26, 10, 46, 0.6), rgba(255, 76, 164, 0.4)),
-    url("829FAF68-1581-4793-B1B5-91677BBCD508.png") center / cover;
+    linear-gradient(rgba(26, 10, 46, 0.4), rgba(255, 76, 164, 0.3)),
+    url("Jason_and_Lucia_Robbery_landscape.jpg") center / cover;
   border-radius: 28px;
   padding: 30px 15px 15px;
   position: relative;
   overflow: hidden;
 }
+
 
 .phone-notch {
   position: absolute;
@@ -469,4 +469,42 @@ button:hover{
   opacity: 0.9;
 }
 
+/* MOVE CONTROLS */
+.move-controls {
+  position: absolute;
+  z-index: 4;
+  top: 78px;
+  left: 28px;
+  width: 110px;
+  height: 110px;
+  background: rgba(7, 16, 22, 0.85);
+  border: 1px solid rgba(255, 76, 164, 0.4);
+  border-radius: 50%;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(4px);
+}
 
+.move-controls button {
+  position: absolute;
+  width: 36px;
+  height: 36px;
+  background: none;
+  color: #ff4ca4;
+  border: 0;
+  font-size: 19px;
+  cursor: pointer;
+  transition: 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.move-controls button:active {
+  transform: scale(0.85);
+}
+
+/* Pozicije strelica u krugu */
+.move-controls button:nth-child(1) { top: 8px; left: 50%; transform: translateX(-50%); }
+.move-controls button:nth-child(2) { left: 8px; top: 50%; transform: translateY(-50%); }
+.move-controls button:nth-child(3) { right: 8px; top: 50%; transform: translateY(-50%); }
+.move-controls button:nth-child(4) { bottom: 8px; left: 50%; transform: translateX(-50%); }
