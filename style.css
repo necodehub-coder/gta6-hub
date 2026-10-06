@@ -442,6 +442,8 @@ button:hover{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 12px;
+    position: relative;
+    z-index: 2;
 }
 
 .phone-app {
@@ -460,6 +462,8 @@ button:hover{
   justify-content: center;
   font-size: 18px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  position: relative;
+  z-index: 3;
 }
 
 /* Boje aplikacija */
