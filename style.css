@@ -400,9 +400,7 @@ button:hover{
 .phone-screen {
   width: 100%;
   height: 100%;
-  background:
-    linear-gradient(rgba(26, 10, 46, 0.4), rgba(255, 76, 164, 0.3)),
-    url("Jason_and_Lucia_Robbery_landscape.jpg") center / cover;
+  background: linear-gradient(160deg, #1a0a2e, #b52b72);
   border-radius: 28px;
   padding: 30px 15px 15px;
   position: relative;
@@ -462,8 +460,7 @@ button:hover{
   justify-content: center;
   font-size: 18px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
-  position: relative;
-  z-index: 3;
+  
 }
 
 /* Boje aplikacija */
