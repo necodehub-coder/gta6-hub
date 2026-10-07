@@ -147,17 +147,7 @@
 
 </div>
 
-<!-- PAGE INDICATORS -->
-<div class="phone-dots">
-  <span class="dot active"></span>
-  <span class="dot"></span>
-</div>
-<!-- PAGE INDICATORS -->
-<div class="phone-dots">
-  <span class="dot active"></span>
-  <span class="dot"></span>
-  <span class="dot"></span>
-</div>
+
 <!-- PAGE INDICATORS -->
 <div class="phone-dots">
   <span class="dot active"></span>
@@ -172,6 +162,22 @@
 </div>
 
 <script src="script.js"></script>
+
+  <script>
+  const phonePages = document.querySelector('.phone-pages');
+  const dots = document.querySelectorAll('.phone-dots .dot');
+
+  if (phonePages && dots.length) {
+    phonePages.addEventListener('scroll', () => {
+      const pageWidth = phonePages.clientWidth;
+      const currentPage = Math.round(phonePages.scrollLeft / pageWidth);
+
+      dots.forEach((dot, index) => {
+        dot.classList.toggle('active', index === currentPage);
+      });
+    });
+  }
+</script>
 
 </body>
 </html>
