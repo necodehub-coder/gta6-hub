@@ -402,7 +402,7 @@ button:hover{
 .phone-screen {
   width: 100%;
   height: 100%;
-  background: linear-gradient(160deg, #1a0a2e, #b52b72);
+  background: transparent;
   border-radius: 28px;
   padding: 25px 10px 10px;
   position: relative;
