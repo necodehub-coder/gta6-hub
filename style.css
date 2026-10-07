@@ -392,7 +392,7 @@ button:hover{
 .phone-frame {
   width: 170px;
   height: 340px;
-  background: #1a1a1a;
+  background: transparent;
   border-radius: 35px;
   padding: 8px;
   box-shadow: 0 20px 60px rgba(255, 76, 164, 0.3), 0 0 0 2px rgba(255, 76, 164, 0.3);
