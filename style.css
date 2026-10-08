@@ -907,21 +907,39 @@ button:hover{
 
 .flash-fm-controls {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   color: #fff;
-  font-size: 10px;
+  font-size: 11px;
+  padding: 0 4px;
 }
 
-.flash-fm-controls .play {
+.flash-fm-controls span {
   width: 20px;
   height: 20px;
-  background: #fff;
-  color: #000;
-  border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 9px;
+  cursor: pointer;
+  transition: 0.2s;
+  opacity: 0.8;
 }
+
+.flash-fm-controls span:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+.flash-fm-controls .play {
+  width: 24px;
+  height: 24px;
+  background: #fff;
+  color: #000;
+  border-radius: 50%;
+  font-size: 10px;
+  opacity: 1;
+  box-shadow: 0 2px 8px rgba(255, 255, 255, 0.3);
+}
+
+
 
