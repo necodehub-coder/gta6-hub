@@ -915,14 +915,17 @@ button:hover{
 }
 
 .flash-fm-controls span {
-  width: 20px;
-  height: 20px;
+  width: 22px;
+  height: 22px;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
   transition: 0.2s;
   opacity: 0.8;
+  font-size: 8px;
+  letter-spacing: -1px;
+  font-family: monospace;
 }
 
 .flash-fm-controls span:hover {
@@ -931,13 +934,14 @@ button:hover{
 }
 
 .flash-fm-controls .play {
-  width: 24px;
-  height: 24px;
+  width: 22px;
+  height: 22px;
   background: #fff;
   color: #000;
   border-radius: 50%;
-  font-size: 10px;
+  font-size: 9px;
   opacity: 1;
+  letter-spacing: 0;
   box-shadow: 0 2px 8px rgba(255, 255, 255, 0.3);
 }
 
