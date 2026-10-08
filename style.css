@@ -404,7 +404,7 @@ button:hover{
   height: 100%;
   background:
     linear-gradient(rgba(26, 10, 46, 0.5), rgba(181, 43, 114, 0.4)),
-    url("Jason_and_Lucia_Robbery_landscape.jpg") center / contain no-repeat;
+    url("Jason_and_Lucia_Robbery_landscape.jpg") left center / cover no-repeat;
   border-radius: 28px;
   padding: 28px 12px 12px;
   position: relative;
