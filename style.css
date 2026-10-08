@@ -821,3 +821,99 @@ button:hover{
   font-size: 10px;
   color: #ddd;
 }
+
+/* FLASH FM RADIO */
+.flash-fm {
+  margin-top: 30px;
+  background: rgba(17, 19, 26, 0.8);
+  border: 1px solid rgba(255, 76, 164, 0.3);
+  border-radius: 10px;
+  padding: 12px;
+}
+
+.flash-fm-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.flash-fm-logo {
+  background: linear-gradient(135deg, #ff4ca4, #b52b72);
+  color: #fff;
+  font-size: 9px;
+  font-weight: 900;
+  padding: 6px 8px;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  font-style: italic;
+}
+
+.flash-fm-logo span {
+  color: #ffd11a;
+}
+
+.flash-fm-info strong {
+  display: block;
+  font-size: 10px;
+  color: #fff;
+}
+
+.flash-fm-info small {
+  font-size: 8px;
+  color: #888;
+}
+
+.flash-fm-wave {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  height: 20px;
+  margin-bottom: 10px;
+}
+
+.flash-fm-wave span {
+  width: 2px;
+  background: #ff4ca4;
+  border-radius: 1px;
+  animation: wave 1s infinite ease-in-out;
+}
+
+.flash-fm-wave span:nth-child(1) { height: 6px; animation-delay: 0.1s; }
+.flash-fm-wave span:nth-child(2) { height: 12px; animation-delay: 0.2s; }
+.flash-fm-wave span:nth-child(3) { height: 8px; animation-delay: 0.3s; }
+.flash-fm-wave span:nth-child(4) { height: 15px; animation-delay: 0.4s; }
+.flash-fm-wave span:nth-child(5) { height: 10px; animation-delay: 0.5s; }
+.flash-fm-wave span:nth-child(6) { height: 16px; animation-delay: 0.6s; }
+.flash-fm-wave span:nth-child(7) { height: 7px; animation-delay: 0.7s; }
+.flash-fm-wave span:nth-child(8) { height: 13px; animation-delay: 0.8s; }
+.flash-fm-wave span:nth-child(9) { height: 9px; animation-delay: 0.9s; }
+.flash-fm-wave span:nth-child(10) { height: 14px; animation-delay: 1s; }
+.flash-fm-wave span:nth-child(11) { height: 6px; animation-delay: 1.1s; }
+.flash-fm-wave span:nth-child(12) { height: 11px; animation-delay: 1.2s; }
+
+@keyframes wave {
+  0%, 100% { transform: scaleY(1); }
+  50% { transform: scaleY(1.6); }
+}
+
+.flash-fm-controls {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #fff;
+  font-size: 11px;
+}
+
+.flash-fm-controls .play {
+  width: 24px;
+  height: 24px;
+  background: #fff;
+  color: #000;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+}
