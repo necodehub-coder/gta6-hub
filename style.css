@@ -398,13 +398,12 @@ button:hover{
   box-shadow: 0 20px 60px rgba(255, 76, 164, 0.4), 0 0 0 2px rgba(255, 76, 164, 0.5);
   position: relative;
 }
-
 .phone-screen {
   width: 100%;
   height: 100%;
   background:
-    linear-gradient(rgba(26, 10, 46, 0.5), rgba(181, 43, 114, 0.4)),
-    url("Jason_and_Lucia_Robbery_landscape.jpg") left center / cover no-repeat;
+    linear-gradient(rgba(26, 10, 46, 0.4), rgba(181, 43, 114, 0.3)),
+    url("Jason_and_Lucia_10.jpg") center / cover no-repeat;
   border-radius: 28px;
   padding: 28px 12px 12px;
   position: relative;
@@ -412,6 +411,7 @@ button:hover{
   display: flex;
   flex-direction: column;
 }
+
 
 .phone-notch {
   position: absolute;
