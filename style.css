@@ -408,7 +408,7 @@ button:hover{
   box-shadow: 
     0 15px 40px rgba(255, 76, 164, 0.35),
     0 0 30px rgba(255, 76, 164, 0.25);
-  border: 2px solid #1a1a1a;
+  border: 1.5px solid rgba(192, 192, 192, 0.6);
   position: relative;
 }
 
