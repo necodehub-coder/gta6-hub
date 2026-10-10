@@ -200,13 +200,14 @@ button:hover{
 
 .brand-hub {
   color: #ff4ca4;
-  font-size: 15px;
+  font-size: 18px;
   font-weight: 400;
   font-style: italic;
-  font-family: Georgia, 'Times New Roman', serif;
-  letter-spacing: 4px;
+  font-family: 'Brush Script MT', 'Lucida Handwriting', cursive;
+  letter-spacing: 2px;
   display: block;
-  margin-top: -2px;
+  margin-top: -4px;
+  text-shadow: 0 0 10px rgba(255, 76, 164, 0.5);
 }
 /* SIDEBAR NAV */
 .sidebar-nav {
