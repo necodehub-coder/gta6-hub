@@ -154,10 +154,11 @@ button:hover{
 .sidebar-brand {
   display: flex;
   align-items: flex-end;
-  gap: 6px;
-  padding: 0 5px 25px;
+  gap: 4px;
+  padding: 0 0 25px 0;
   border-bottom: 1px solid #1a1a1a;
   margin-bottom: 20px;
+  white-space: nowrap;
 }
 
 .brand-gta {
@@ -168,12 +169,13 @@ button:hover{
 
 .brand-gta span {
   color: #fff;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 900;
   text-transform: lowercase;
   font-family: 'Arial Black', sans-serif;
-  letter-spacing: -0.5px;
+  letter-spacing: -1px;
   line-height: 0.95;
+  display: block;
 }
 
 .brand-main {
@@ -184,7 +186,7 @@ button:hover{
 
 .brand-vi {
   color: #ff4ca4;
-  font-size: 46px;
+  font-size: 42px;
   font-weight: 900;
   font-style: italic;
   font-family: 'Arial Black', sans-serif;
@@ -193,15 +195,18 @@ button:hover{
   -webkit-text-fill-color: transparent;
   background-clip: text;
   line-height: 0.85;
+  display: block;
 }
 
 .brand-hub {
   color: #ff4ca4;
-  font-size: 16px;
-  font-weight: 900;
+  font-size: 15px;
+  font-weight: 400;
   font-style: italic;
-  font-family: 'Arial Black', sans-serif;
-  letter-spacing: 3px;
+  font-family: Georgia, 'Times New Roman', serif;
+  letter-spacing: 4px;
+  display: block;
+  margin-top: -2px;
 }
 /* SIDEBAR NAV */
 .sidebar-nav {
