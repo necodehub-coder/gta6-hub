@@ -153,27 +153,54 @@ button:hover{
 /* SIDEBAR BRAND */
 .sidebar-brand {
   display: flex;
-  align-items: baseline;
-  gap: 4px;
+  align-items: flex-end;
+  gap: 8px;
   padding: 0 10px 25px;
   border-bottom: 1px solid #1a1a1a;
   margin-bottom: 20px;
 }
 
-.brand-small {
+.brand-gta {
+  display: flex;
+  flex-direction: column;
+  line-height: 0.9;
+}
+
+.brand-gta span {
   color: #fff;
-  font-size: 16px;
+  font-size: 13px;
   font-weight: 900;
-  font-style: italic;
+  text-transform: lowercase;
+  font-family: 'Arial Black', sans-serif;
+  letter-spacing: -0.5px;
 }
 
-.brand-large {
+.brand-main {
+  display: flex;
+  flex-direction: column;
+  line-height: 0.85;
+}
+
+.brand-vi {
   color: #ff4ca4;
-  font-size: 26px;
+  font-size: 32px;
   font-weight: 900;
   font-style: italic;
+  font-family: 'Arial Black', sans-serif;
+  background: linear-gradient(135deg, #ff4ca4, #a77cff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
+.brand-hub {
+  color: #ff4ca4;
+  font-size: 12px;
+  font-weight: 900;
+  font-style: italic;
+  font-family: 'Arial Black', sans-serif;
+  letter-spacing: 2px;
+}
 /* SIDEBAR NAV */
 .sidebar-nav {
   display: flex;
