@@ -565,7 +565,7 @@ button:hover{
 /* PAGE DOTS */
 .phone-dots {
   position: absolute;
-  bottom: 40px;
+  bottom: 45px;
   left: 0;
   right: 0;
   display: flex;
