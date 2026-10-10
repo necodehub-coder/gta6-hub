@@ -154,7 +154,7 @@
   <div class="phone-frame">
     <div class="phone-screen">
       <div class="phone-notch"></div>
-      <div class="phone-time">19:47</div>
+      <div class="phone-time" id="phoneTime">19:47</div>
       <h3 class="phone-title">iFruit</h3>
  <div class="phone-pages">
 
@@ -358,6 +358,20 @@
     currentNews = (currentNews + 1) % newsData.length;
     showNews(currentNews);
   }, 4000);
+</script>
+  <script>
+  function updatePhoneTime() {
+    const now = new Date();
+    const hours = String(now.getHours()).padStart(2, '0');
+    const minutes = String(now.getMinutes()).padStart(2, '0');
+    const phoneTime = document.getElementById('phoneTime');
+    if (phoneTime) {
+      phoneTime.textContent = hours + ':' + minutes;
+    }
+  }
+
+  updatePhoneTime();
+  setInterval(updatePhoneTime, 1000);
 </script>
 
 </body>
