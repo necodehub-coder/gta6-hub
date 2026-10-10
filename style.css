@@ -564,11 +564,13 @@ button:hover{
 
 /* PAGE DOTS */
 .phone-dots {
+  position: absolute;
+  bottom: 40px;
+  left: 0;
+  right: 0;
   display: flex;
   justify-content: center;
   gap: 5px;
-  margin-top: 8px;
-  position: relative;
   z-index: 3;
 }
 
