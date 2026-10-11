@@ -2,8 +2,8 @@
 .news-hero {
   position: relative;
   margin: 20px 30px;
-  padding: 40px;
-  background: linear-gradient(135deg, rgba(26, 10, 46, 0.95), rgba(181, 43, 114, 0.7)),
+  padding: 60px 40px;
+  background: linear-gradient(135deg, rgba(26, 10, 46, 0.5), rgba(181, 43, 114, 0.25)),
               url("IMG_0831.jpeg") center / cover no-repeat;
   border: 1px solid rgba(255, 76, 164, 0.4);
   border-radius: 16px;
