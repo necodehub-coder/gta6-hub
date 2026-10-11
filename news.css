@@ -256,10 +256,10 @@
   background: transparent;
   border: 1px solid rgba(255, 76, 164, 0.3);
   color: #aaa;
-  width: 36px;
-  height: 36px;
+  width: 28px;
+  height: 28px;
   border-radius: 50%;
-  font-size: 12px;
+  font-size: 10px;
   font-weight: 900;
   cursor: pointer;
   transition: 0.3s;
@@ -281,20 +281,20 @@
   box-shadow: 0 0 20px rgba(255, 76, 164, 0.5);
   transform: scale(1.1);
 }
-
 .page-arrow {
   background: transparent;
   border: 0;
   color: #666;
-  width: 36px;
-  height: 36px;
-  font-size: 16px;
+  width: 28px;
+  height: 28px;
+  font-size: 14px;
   cursor: pointer;
   transition: 0.3s;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 
 .page-arrow:hover {
   color: #ff4ca4;
