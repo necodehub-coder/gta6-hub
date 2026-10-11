@@ -339,6 +339,27 @@
     });
   });
 </script>
+  <script>
+  // SEARCH FUNCTIONALITY
+  const searchInput = document.querySelector('.news-search input');
+
+  if (searchInput) {
+    searchInput.addEventListener('input', (e) => {
+      const query = e.target.value.toLowerCase().trim();
+
+      newsCards.forEach(card => {
+        const title = card.querySelector('h3').textContent.toLowerCase();
+        const desc = card.querySelector('p').textContent.toLowerCase();
+
+        if (title.includes(query) || desc.includes(query)) {
+          card.style.display = 'block';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    });
+  }
+</script>
 
 </body>
 </html>
