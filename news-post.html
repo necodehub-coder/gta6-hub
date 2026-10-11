@@ -6,7 +6,7 @@
 <title>GTA 6 Hub — News Post</title>
 <link rel="stylesheet" href="style.css?v=100">
 <link rel="stylesheet" href="news.css?v=8">
-<link rel="stylesheet" href="news-post.css?v=1">
+<link rel="stylesheet" href="news-post.css?v=2">
 </head>
 
 <body>
@@ -102,41 +102,20 @@
     <!-- ARTICLE -->
     <article class="news-post">
 
-      <span class="post-tag official">OFFICIAL</span>
+      <span class="post-tag" id="postTag">OFFICIAL</span>
 
-      <h1>Rockstar Confirms GTA 6 Trailer 2 Coming Soon</h1>
+      <h1 id="postTitle">Loading...</h1>
 
       <div class="post-meta">
-        <span>📅 May 8, 2025</span>
-        <span>💬 124 comments</span>
+        <span id="postDate">📅 —</span>
+        <span id="postComments">💬 — comments</span>
         <span>👤 By GTA 6 Hub Team</span>
       </div>
 
-      <div class="post-hero-img" style="background-image: url('829FAF68-1581-4793-B1B5-91677BBCD508.png');"></div>
+      <div class="post-hero-img" id="postImage"></div>
 
-      <div class="post-content">
-        <p>Rockstar Games has officially confirmed that the second trailer for GTA 6 is on the way. In a brief statement released earlier today, the studio announced that new details about the release window and what to expect will be shared in the coming weeks.</p>
-
-        <p>This confirmation comes after months of speculation from fans who have been eagerly awaiting more information about the highly anticipated title. The first trailer, released in December 2023, broke YouTube records and gave players their first look at Vice City and the new protagonist duo, Jason and Lucia.</p>
-
-        <h2>What to Expect from Trailer 2</h2>
-
-        <p>While Rockstar has kept details under wraps, industry insiders suggest that the second trailer will focus more on gameplay elements, including:</p>
-
-        <ul>
-          <li>New vehicles and customization options</li>
-          <li>Expanded map details showing more of Leonida</li>
-          <li>More screen time for both Jason and Lucia</li>
-          <li>First look at the game's updated RAGE engine</li>
-        </ul>
-
-        <p>The trailer is expected to drop sometime in the next few months, with some sources suggesting it could arrive before the end of Q3 2025.</p>
-
-        <h2>Release Date Still Set for November 19, 2026</h2>
-
-        <p>Despite the ongoing wait for new footage, Rockstar has maintained that GTA 6 will launch on November 19, 2026, for PlayStation 5 and Xbox Series X|S. A PC version has not been officially announced, but is expected to follow later.</p>
-
-        <p>Stay tuned to GTA 6 Hub for all the latest updates as they become available.</p>
+      <div class="post-content" id="postContent">
+        <p>Loading article...</p>
       </div>
 
       <!-- SHARE -->
@@ -153,19 +132,8 @@
     <!-- RELATED NEWS -->
     <section class="related-news">
       <h2>RELATED NEWS</h2>
-      <div class="related-grid">
-        <a href="#" class="related-card">
-          <div class="related-img" style="background-image: url('Jason_and_Lucia_10.jpg');"></div>
-          <h3>New Screenshots Reveal More of Vice City</h3>
-        </a>
-        <a href="#" class="related-card">
-          <div class="related-img" style="background-image: url('C7881E46-CB16-4D56-90E5-535C87BD1050.png');"></div>
-          <h3>Rockstar Teases New City in Trailer 2</h3>
-        </a>
-        <a href="#" class="related-card">
-          <div class="related-img" style="background-image: url('713B8D01-E64C-4222-BC67-F849157B0B5C.png');"></div>
-          <h3>Possible Release Date Leaked?</h3>
-        </a>
+      <div class="related-grid" id="relatedGrid">
+        <!-- JavaScript popunjava -->
       </div>
     </section>
 
@@ -204,6 +172,47 @@
     <small>GAMES</small>
   </div>
 </footer>
+
+<!-- NEWS DATA + DINAMIČKI SADRŽAJ -->
+<script src="news-data.js"></script>
+<script>
+  // Uzmi ID iz URL-a
+  const params = new URLSearchParams(window.location.search);
+  const articleId = params.get('id') || '1';
+  const article = newsArticles[articleId];
+
+  if (article) {
+    // Popuni sadržaj
+    document.getElementById('postTag').textContent = article.categoryName;
+    document.getElementById('postTag').className = 'post-tag ' + article.category;
+    document.getElementById('postTitle').textContent = article.title;
+    document.getElementById('postDate').textContent = '📅 ' + article.date;
+    document.getElementById('postComments').textContent = '💬 ' + article.comments + ' comments';
+    document.getElementById('postImage').style.backgroundImage = `url('${article.image}')`;
+    document.getElementById('postContent').innerHTML = article.content;
+    document.title = article.title + ' — GTA 6 Hub';
+  } else {
+    document.getElementById('postTitle').textContent = 'Article not found';
+    document.getElementById('postContent').innerHTML = '<p>Sorry, this article could not be found.</p>';
+  }
+
+  // Related news (prikazuje 3 druge vesti)
+  const relatedGrid = document.getElementById('relatedGrid');
+  const allIds = Object.keys(newsArticles).filter(id => id !== articleId);
+  const relatedIds = allIds.slice(0, 3);
+
+  relatedIds.forEach(id => {
+    const rel = newsArticles[id];
+    const card = document.createElement('a');
+    card.href = 'news-post.html?id=' + id;
+    card.className = 'related-card';
+    card.innerHTML = `
+      <div class="related-img" style="background-image: url('${rel.image}');"></div>
+      <h3>${rel.title}</h3>
+    `;
+    relatedGrid.appendChild(card);
+  });
+</script>
 
 </body>
 </html>
