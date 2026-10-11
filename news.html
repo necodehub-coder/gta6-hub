@@ -225,6 +225,22 @@
             </div>
           </div>
         </div>
+        <!-- CARD 7: TRAILERS -->
+        <div class="news-card-page" data-category="trailers">
+          <div class="news-card-img" style="background-image: url('829FAF68-1581-4793-B1B5-91677BBCD508.png');">
+            <span class="news-tag trailers">TRAILERS</span>
+          </div>
+          <div class="news-card-content">
+            <h3>GTA 6 Trailer 1 — Breakdown and Analysis</h3>
+            <p>Every detail from the first GTA 6 trailer analyzed. From the characters to the locations, here's everything we spotted.</p>
+            <div class="news-card-meta">
+              <span>📅 Apr 1, 2025</span>
+              <span>💬 305</span>
+              <a href="#" class="read-more">READ MORE →</a>
+            </div>
+          </div>
+        </div>
+
 
       </div>
 
@@ -292,6 +308,28 @@
       newsCards.forEach(card => {
         const category = card.dataset.category;
 
+        if (filter === 'all' || category === filter) {
+          card.style.display = 'block';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    });
+  });
+</script>
+  <script>
+  const filterButtons = document.querySelectorAll('.filter-btn');
+  const newsCards = document.querySelectorAll('.news-card-page');
+
+  filterButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      filterButtons.forEach(btn => btn.classList.remove('active'));
+      button.classList.add('active');
+
+      const filter = button.textContent.trim().toLowerCase();
+
+      newsCards.forEach(card => {
+        const category = card.dataset.category;
         if (filter === 'all' || category === filter) {
           card.style.display = 'block';
         } else {
