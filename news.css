@@ -193,6 +193,7 @@
 .news-tag.update { background: linear-gradient(135deg, #a77cff, #4a1a7a); }
 .news-tag.rumor { background: linear-gradient(135deg, #ff4c4c, #7a1a1a); }
 .news-tag.community { background: linear-gradient(135deg, #4cff7c, #1a7a3c); }
+.news-tag.trailers { background: linear-gradient(135deg, #ffd11a, #7a5a0a); }
 
 .news-card-content {
   padding: 15px 18px 18px;
