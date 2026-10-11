@@ -469,6 +469,60 @@
 
   // Inicijalno prikaži prvu stranicu
   showPage(1);
+    // ARROW NAVIGATION
+  const prevArrow = document.querySelector('.page-arrow:first-child');
+  const nextArrow = document.querySelector('.page-arrow:last-child');
+
+  let currentPage = 1;
+
+  function updateArrows() {
+    // Provera da li postoji prethodna stranica
+    if (currentPage === 1) {
+      prevArrow.style.opacity = '0.3';
+      prevArrow.style.cursor = 'not-allowed';
+    } else {
+      prevArrow.style.opacity = '1';
+      prevArrow.style.cursor = 'pointer';
+    }
+
+    // Provera da li postoji sledeća stranica
+    if (currentPage >= totalPages) {
+      nextArrow.style.opacity = '0.3';
+      nextArrow.style.cursor = 'not-allowed';
+    } else {
+      nextArrow.style.opacity = '1';
+      nextArrow.style.cursor = 'pointer';
+    }
+  }
+
+  prevArrow.addEventListener('click', () => {
+    if (currentPage > 1) {
+      currentPage--;
+      showPage(currentPage);
+      updateArrows();
+    }
+  });
+
+  nextArrow.addEventListener('click', () => {
+    if (currentPage < totalPages) {
+      currentPage++;
+      showPage(currentPage);
+      updateArrows();
+    }
+  });
+
+  // Ažuriraj currentPage kada klikneš na broj
+  pageNumbers.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const pageNum = parseInt(btn.textContent);
+      if (!isNaN(pageNum)) {
+        currentPage = pageNum;
+        updateArrows();
+      }
+    });
+  });
+
+  updateArrows();
 </script>
 
 </body>
