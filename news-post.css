@@ -39,6 +39,7 @@
 .post-tag.update { background: linear-gradient(135deg, #a77cff, #4a1a7a); }
 .post-tag.rumor { background: linear-gradient(135deg, #ff4c4c, #7a1a1a); }
 .post-tag.community { background: linear-gradient(135deg, #4cff7c, #1a7a3c); }
+.post-tag.trailers { background: linear-gradient(135deg, #ffd11a, #7a5a0a); }
 
 .news-post h1 {
   font-size: 38px;
