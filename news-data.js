@@ -156,4 +156,96 @@ const newsArticles = {
       <p>Fans have spotted numerous easter eggs and references hidden throughout the trailer, including references to previous GTA games and hints about gameplay features.</p>
     `
   }
+  ,
+  8: {
+    category: "official",
+    categoryName: "OFFICIAL",
+    title: "GTA 6 Release Window Officially Confirmed",
+    date: "Mar 28, 2025",
+    comments: 456,
+    image: "829FAF68-1581-4793-B1B5-91677BBCD508.png",
+    content: `
+      <p>Rockstar has officially confirmed the release window for GTA 6. The game will launch on November 19, 2026 for PlayStation 5 and Xbox Series X|S.</p>
+      <p>This announcement comes after months of speculation and rumors about delays. Fans can now rest assured that the game is on track for its planned release.</p>
+      <h2>Official Statement</h2>
+      <p>In a recent press release, Rockstar Games stated: "We are excited to confirm that GTA 6 will launch on November 19, 2026. Our team has been working tirelessly to deliver the most immersive open-world experience yet."</p>
+      <p>Stay tuned for more updates.</p>
+    `
+  },
+  9: {
+    category: "news",
+    categoryName: "NEWS",
+    title: "New Details About Jason and Lucia's Story",
+    date: "Mar 20, 2025",
+    comments: 178,
+    image: "Jason_and_Lucia_10.jpg",
+    content: `
+      <p>New details have emerged about the story of Jason and Lucia, the two main protagonists of GTA 6.</p>
+      <p>According to insiders, the game will follow a Bonnie-and-Clyde style narrative, with the two characters embarking on a crime spree across the state of Leonida.</p>
+      <h2>What We Know</h2>
+      <ul>
+        <li>Both characters are playable throughout the story</li>
+        <li>Their relationship evolves based on player choices</li>
+        <li>The narrative spans multiple cities and regions</li>
+      </ul>
+    `
+  },
+  10: {
+    category: "updates",
+    categoryName: "UPDATE",
+    title: "GTA 6 Hub — New Features Added",
+    date: "Mar 15, 2025",
+    comments: 42,
+    image: "C65D727B-AC5B-4603-906D-A6E5A848D5DF.png",
+    content: `
+      <p>We've been hard at work adding new features to GTA 6 Hub. Here's what's new.</p>
+      <h2>What's New</h2>
+      <ul>
+        <li>Interactive Vice City map with markers</li>
+        <li>Vehicle database with stats</li>
+        <li>News section with filtering and search</li>
+        <li>Community forum (coming soon)</li>
+      </ul>
+      <p>Thanks for being part of our community!</p>
+    `
+  },
+  11: {
+    category: "rumors",
+    categoryName: "RUMOR",
+    title: "Leaked Gameplay Footage Surfaces Online",
+    date: "Mar 10, 2025",
+    comments: 312,
+    image: "713B8D01-E64C-4222-BC67-F849157B0B5C.png",
+    content: `
+      <p>A new leak has surfaced online showing what appears to be early gameplay footage of GTA 6.</p>
+      <p>The footage, which has not been officially verified, shows several new gameplay mechanics that fans have been speculating about.</p>
+      <h2>What's in the Footage</h2>
+      <ul>
+        <li>Third-person shooting mechanics</li>
+        <li>Vehicle customization</li>
+        <li>Dynamic weather system</li>
+        <li>New interaction system</li>
+      </ul>
+      <p>Rockstar has not commented on the leak.</p>
+    `
+  },
+  12: {
+    category: "community",
+    categoryName: "COMMUNITY",
+    title: "GTA 6 Fan Theories That Might Be True",
+    date: "Mar 5, 2025",
+    comments: 94,
+    image: "Grassrivers_03.jpg",
+    content: `
+      <p>The GTA community has some incredible theories about GTA 6. Here are some of the most convincing ones.</p>
+      <h2>Popular Theories</h2>
+      <ul>
+        <li>The game will feature a dynamic economy system</li>
+        <li>Multiple endings based on player choices</li>
+        <li>Returning characters from previous GTA games</li>
+        <li>Seasonal weather and events</li>
+      </ul>
+      <p>While none of these are confirmed, they're fun to think about!</p>
+    `
+  }
 };
