@@ -328,11 +328,6 @@
         <button class="page-arrow">←</button>
         <button class="page-num active">1</button>
         <button class="page-num">2</button>
-        <button class="page-num">3</button>
-        <button class="page-num">4</button>
-        <button class="page-num">5</button>
-        <span>...</span>
-        <button class="page-num">12</button>
         <button class="page-arrow">→</button>
       </div>
     </section>
@@ -438,6 +433,42 @@
       });
     });
   }
+</script>
+  <script>
+  // PAGINATION
+  const cardsPerPage = 6;
+  const allNewsCards = document.querySelectorAll('.news-card-page');
+  const pageNumbers = document.querySelectorAll('.page-num');
+  const totalPages = Math.ceil(allNewsCards.length / cardsPerPage);
+
+  function showPage(pageNum) {
+    allNewsCards.forEach((card, index) => {
+      const start = (pageNum - 1) * cardsPerPage;
+      const end = start + cardsPerPage;
+
+      if (index >= start && index < end) {
+        card.style.display = 'block';
+      } else {
+        card.style.display = 'none';
+      }
+    });
+
+    pageNumbers.forEach(btn => {
+      btn.classList.toggle('active', parseInt(btn.textContent) === pageNum);
+    });
+  }
+
+  pageNumbers.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const pageNum = parseInt(btn.textContent);
+      if (!isNaN(pageNum)) {
+        showPage(pageNum);
+      }
+    });
+  });
+
+  // Inicijalno prikaži prvu stranicu
+  showPage(1);
 </script>
 
 </body>
