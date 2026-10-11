@@ -46,23 +46,24 @@
 
 .news-hero-logo {
   text-align: right;
-  margin-right: 60px;
+  margin-right: 0;
 }
 
 .brand-gta-mini {
   display: block;
   color: #fff;
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 900;
   text-transform: lowercase;
   font-family: 'Arial Black', sans-serif;
   letter-spacing: -1px;
   line-height: 1;
+  margin-bottom: 4px;
 }
 
 .brand-vi-big {
   display: block;
-  font-size: 90px;
+  font-size: 70px;
   font-weight: 900;
   font-style: italic;
   font-family: 'Arial Black', sans-serif;
