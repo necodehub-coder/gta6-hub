@@ -254,91 +254,92 @@ const newsArticles = {
   13: {
     category: "news",
     categoryName: "NEWS",
-    title: "Nova Ulica u Vice Cityju: Otkrivena Gradilišta i Arhitektura",
+    title: "New Vice City District Revealed: Construction Sites & Architecture",
     date: "Jun 20, 2026",
     comments: 142,
     image: "Vice_City_02.jpg",
     content: `
-      <p>Novi snimak iz GTA 6 otkriva impresivnu razmeru Vice Cityja, koja prevazilazi Los Santos. Na snimku se mogu videti guste ulice, brodovi, helikopteri, ali i zgrade u izgradnji.</p>
-      <p>Posebno se ističe veliko gradilište sa oblakoderom u izgradnji, što je nastavak tradicije "Mile High Club" zgrade iz prethodnih delova. Takođe, na mapi se pojavljuje kompleks inspirisan zgradom Brickell on the River, smešten u naselju Tequesta.</p>
-      <h2>Detalji iz Trejlera</h2>
+      <p>A new GTA 6 clip reveals the impressive scale of Vice City, which surpasses Los Santos. The footage shows dense streets, boats, helicopters, and buildings under construction.</p>
+      <p>Particularly notable is a large construction site with a skyscraper being built, continuing the tradition of the "Mile High Club" building from previous titles. Additionally, the map features a complex inspired by the Brickell on the River building, located in the Tequesta neighborhood.</p>
+      <h2>Details from the Trailer</h2>
       <ul>
-        <li>Gradilište sa oblakoderom u izgradnji (Mile High Club)</li>
-        <li>Kompleks inspirisan Brickell on the River zgradom</li>
-        <li>Guste ulice, brodovi i helikopteri</li>
+        <li>Construction site with a skyscraper (Mile High Club)</li>
+        <li>Complex inspired by the Brickell on the River building</li>
+        <li>Dense streets, boats, and helicopters</li>
       </ul>
     `
   },
   14: {
     category: "news",
     categoryName: "NEWS",
-    title: "Jack of Hearts: Sve o Novom Noćnom Klubu u GTA 6",
+    title: "Jack of Hearts: Everything About the New Nightclub in GTA 6",
     date: "Sep 15, 2026",
     comments: 89,
     image: "Boobie_Ike_04.jpg",
     content: `
-      <p>U GTA 6 će se pojaviti novi noćni klub pod nazivom "Jack of Hearts". Smešten je u naselju Crosstown u Vice Cityju, a u vlasništvu je Boobie Ikea, lokalnog biznismena i bivšeg uličnog trgovca.</p>
-      <p>Klub je opisan kao popularno mesto za odrasle, a spekuliše se da bi mogao imati ključnu ulogu u priči, slično kao "Mission Row" u prethodnim igrama. Ovo je jedno od nekoliko potvrđenih mesta za noćni život u igri.</p>
-      <h2>Šta Znamo</h2>
+      <p>A new nightclub called "Jack of Hearts" will appear in GTA 6. It is located in the Crosstown neighborhood of Vice City and is owned by Boobie Ike, a local businessman and former street dealer.</p>
+      <p>The club is described as a popular adult venue, and speculation suggests it could play a key role in the story, similar to "Mission Row" in previous titles. This is one of several confirmed nightlife spots in the game.</p>
+      <h2>What We Know</h2>
       <ul>
-        <li>Lokacija: Crosstown, Vice City</li>
-        <li>Vlasnik: Boobie Ike</li>
-        <li>Tip: Strip klub</li>
+        <li>Location: Crosstown, Vice City</li>
+        <li>Owner: Boobie Ike</li>
+        <li>Type: Strip club</li>
       </ul>
     `
   },
   15: {
     category: "community",
     categoryName: "COMMUNITY",
-    title: "Pronađen Pravi Stan Jasona i Lucie: Belmar Condominium",
+    title: "Jason and Lucia's Real Apartment Found: Belmar Condominium",
     date: "Aug 30, 2026",
     comments: 210,
     image: "Vice_City_09.jpg",
     content: `
-      <p>Fanovi su uspeli da pronađu pravu zgradu koja je poslužila kao inspiracija za stan Jasona i Lucie u GTA 6. Reč je o "Belmar Condominium" u Majamiju, koji je, zanimljivo, srušen tokom razvoja igre.</p>
-      <p>Iako je zgrada uklonjena 2022. godine, njen pogled na zaliv Biscayne i raspored prostorija gotovo su identični onima viđenim u trejleru. Ovo otkriće dodatno potvrđuje posvećenost Rockstara detaljima.</p>
-      <h2>Detalji</h2>
+      <p>Fans have managed to find the real building that served as inspiration for Jason and Lucia's apartment in GTA 6. It is the "Belmar Condominium" in Miami, which, interestingly, was demolished during the game's development.</p>
+      <p>Although the building was removed in 2022, its view of Biscayne Bay and room layout are nearly identical to those seen in the trailer. This discovery further confirms Rockstar's attention to detail.</p>
+      <h2>Details</h2>
       <ul>
-        <li>Zgrada: Belmar Condominium, Majami</li>
-        <li>Srušena: 2022.</li>
-        <li>Pogled: Zaliv Biscayne</li>
+        <li>Building: Belmar Condominium, Miami</li>
+        <li>Demolished: 2022</li>
+        <li>View: Biscayne Bay</li>
       </ul>
     `
   },
   16: {
     category: "news",
     categoryName: "NEWS",
-    title: "Ulična Scena: Bicikli i Motori u GTA 6",
+    title: "Street Scene: Bicycles and Motorcycles in GTA 6",
     date: "Jul 5, 2026",
     comments: 67,
     image: "Vice_City_10.jpg",
     content: `
-      <p>Novi snimci iz GTA 6 potvrđuju da će bicikli i motori biti važan deo saobraćaja. U trejleru se vidi civil koji vozi bicikl u za to predviđenoj traci, dok se na ulicama mogu primetiti i grupe bajkera.</p>
-      <p>Takođe, AI vozači motora sada će dinamički preticati sporija vozila, što dodatno povećava realizam. Očekuje se i vožnja električnih bicikala, što je novina u serijalu.</p>
-      <h2>Novi Detalji</h2>
+      <p>New GTA 6 footage confirms that bicycles and motorcycles will be an important part of traffic. The trailer shows a civilian riding a bicycle in a dedicated lane, while groups of bikers can be spotted on the streets.</p>
+      <p>Additionally, AI motorcycle riders will now dynamically overtake slower vehicles, adding to the realism. Electric bicycles are also expected, which is a first for the series.</p>
+      <h2>New Details</h2>
       <ul>
-        <li>Biciklističke trake</li>
-        <li>Grupe bajkera na ulicama</li>
-        <li>Dinamičko preticanje od strane AI vozača</li>
-        <li>Električni bicikli</li>
+        <li>Bicycle lanes</li>
+        <li>Groups of bikers on the streets</li>
+        <li>Dynamic overtaking by AI riders</li>
+        <li>Electric bicycles</li>
       </ul>
     `
   },
   17: {
     category: "rumors",
     categoryName: "RUMORS",
-    title: "Priča o Luciji: Zatvorska Scena i Početak Igre",
+    title: "Lucia's Story: Prison Scene and the Start of the Game",
     date: "Aug 27, 2026",
     comments: 312,
     image: "Lucia_Caminos_05.jpg",
     content: `
-      <p>Prema navodima iz novog curenja informacija, GTA 6 će započeti scenom u zatvoru u Leonidi, gde vidimo Luciju. Sumnja se da je to uvod u priču, sa flashbackovima koji prikazuju njen život pre hapšenja.</p>
-      <p>Postoje teorije da Lucia sklapa dogovor sa vlastima kako bi izašla iz zatvora, što bi moglo uključivati izdaju njenog partnera Jasona. Rockstar još uvek nije komentarisao ove navode.</p>
-      <h2>Detalji iz Curenja</h2>
+      <p>According to a new leak, GTA 6 will begin with a prison scene in Leonida, where we see Lucia. It is speculated that this serves as an intro to the story, with flashbacks showing her life before her arrest.</p>
+      <p>There are theories that Lucia makes a deal with the authorities to get out of prison, which could involve betraying her partner Jason. Rockstar has not yet commented on these claims.</p>
+      <h2>Details from the Leak</h2>
       <ul>
-        <li>Početak igre u zatvoru u Leonidi</li>
-        <li>Flashbackovi o Lucijinom životu pre hapšenja</li>
-        <li>Mogući dogovor sa vlastima</li>
+        <li>Game begins in a Leonida prison</li>
+        <li>Flashbacks of Lucia's life before her arrest</li>
+        <li>Possible deal with the authorities</li>
       </ul>
     `
   }
+  
