@@ -29,7 +29,7 @@ const newsArticles = {
     title: "New Screenshots Reveal More of Vice City",
     date: "Apr 28, 2025",
     comments: 89,
-    image: "Jason_and_Lucia_10.jpg",
+    image: "IMG_0831.jpeg",
     content: `
       <p>Rockstar has released a set of new screenshots showing the stunning world of Vice City. From the beaches to the nightlife, the game looks more alive than ever.</p>
       <p>These screenshots give us a deeper look into the environments players will explore when GTA 6 launches. The level of detail in the reflections, lighting, and character models is truly next-generation.</p>
@@ -96,7 +96,7 @@ const newsArticles = {
     title: "Rockstar Teases New City in Trailer 2",
     date: "Apr 10, 2025",
     comments: 142,
-    image: "C7881E46-CB16-4D56-90E5-535C87BD1050.png",
+    image: "Leonida_Keys_04.jpg",
     content: `
       <p>Fans believe the second trailer will reveal more about the second major city, possibly featuring new locations and activities.</p>
       <p>The first trailer focused primarily on Vice City, but Rockstar has hinted that the game will feature more than one major city. The state of Leonida appears to be much larger than previously thought.</p>
@@ -142,7 +142,7 @@ const newsArticles = {
     title: "GTA 6 Trailer 1 — Breakdown and Analysis",
     date: "Apr 1, 2025",
     comments: 305,
-    image: "829FAF68-1581-4793-B1B5-91677BBCD508.png",
+    image: "Jason_and_Lucia_Robbery_landscape.jpg",
     content: `
       <p>Every detail from the first GTA 6 trailer analyzed. From the characters to the locations, here's everything we spotted.</p>
       <p>The first GTA 6 trailer broke YouTube records when it was released in December 2023. Now, we're taking a deep dive into every frame to uncover hidden details.</p>
@@ -158,15 +158,14 @@ const newsArticles = {
       <h2>Hidden Details</h2>
       <p>Fans have spotted numerous easter eggs and references hidden throughout the trailer, including references to previous GTA games and hints about gameplay features.</p>
     `
-  }
-  ,
+  },
   8: {
     category: "official",
     categoryName: "OFFICIAL",
     title: "GTA 6 Release Window Officially Confirmed",
     date: "Mar 28, 2025",
     comments: 456,
-    image: "829FAF68-1581-4793-B1B5-91677BBCD508.png",
+    image: "Jason_and_Lucia_09.jpg",
     content: `
       <p>Rockstar has officially confirmed the release window for GTA 6. The game will launch on November 19, 2026 for PlayStation 5 and Xbox Series X|S.</p>
       <p>This announcement comes after months of speculation and rumors about delays. Fans can now rest assured that the game is on track for its planned release.</p>
@@ -199,7 +198,7 @@ const newsArticles = {
     title: "GTA 6 Hub — New Features Added",
     date: "Mar 15, 2025",
     comments: 42,
-    image: "C65D727B-AC5B-4603-906D-A6E5A848D5DF.png",
+    image: "Ambrosia_02.jpg",
     content: `
       <p>We've been hard at work adding new features to GTA 6 Hub. Here's what's new.</p>
       <h2>What's New</h2>
@@ -218,7 +217,7 @@ const newsArticles = {
     title: "Leaked Gameplay Footage Surfaces Online",
     date: "Mar 10, 2025",
     comments: 312,
-    image: "713B8D01-E64C-4222-BC67-F849157B0B5C.png",
+    image: "Mount_Kalaga_National_Park_04.jpg",
     content: `
       <p>A new leak has surfaced online showing what appears to be early gameplay footage of GTA 6.</p>
       <p>The footage, which has not been officially verified, shows several new gameplay mechanics that fans have been speculating about.</p>
@@ -250,10 +249,7 @@ const newsArticles = {
       </ul>
       <p>While none of these are confirmed, they're fun to think about!</p>
     `
-  }
-};
-
-,
+  },
   13: {
     category: "news",
     categoryName: "NEWS",
@@ -345,4 +341,4 @@ const newsArticles = {
       </ul>
     `
   }
-  
+};
