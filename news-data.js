@@ -249,3 +249,96 @@ const newsArticles = {
     `
   }
 };
+
+,
+  13: {
+    category: "news",
+    categoryName: "NEWS",
+    title: "Nova Ulica u Vice Cityju: Otkrivena Gradilišta i Arhitektura",
+    date: "Jun 20, 2026",
+    comments: 142,
+    image: "Vice_City_02.jpg",
+    content: `
+      <p>Novi snimak iz GTA 6 otkriva impresivnu razmeru Vice Cityja, koja prevazilazi Los Santos. Na snimku se mogu videti guste ulice, brodovi, helikopteri, ali i zgrade u izgradnji.</p>
+      <p>Posebno se ističe veliko gradilište sa oblakoderom u izgradnji, što je nastavak tradicije "Mile High Club" zgrade iz prethodnih delova. Takođe, na mapi se pojavljuje kompleks inspirisan zgradom Brickell on the River, smešten u naselju Tequesta.</p>
+      <h2>Detalji iz Trejlera</h2>
+      <ul>
+        <li>Gradilište sa oblakoderom u izgradnji (Mile High Club)</li>
+        <li>Kompleks inspirisan Brickell on the River zgradom</li>
+        <li>Guste ulice, brodovi i helikopteri</li>
+      </ul>
+    `
+  },
+  14: {
+    category: "news",
+    categoryName: "NEWS",
+    title: "Jack of Hearts: Sve o Novom Noćnom Klubu u GTA 6",
+    date: "Sep 15, 2026",
+    comments: 89,
+    image: "Boobie_Ike_04.jpg",
+    content: `
+      <p>U GTA 6 će se pojaviti novi noćni klub pod nazivom "Jack of Hearts". Smešten je u naselju Crosstown u Vice Cityju, a u vlasništvu je Boobie Ikea, lokalnog biznismena i bivšeg uličnog trgovca.</p>
+      <p>Klub je opisan kao popularno mesto za odrasle, a spekuliše se da bi mogao imati ključnu ulogu u priči, slično kao "Mission Row" u prethodnim igrama. Ovo je jedno od nekoliko potvrđenih mesta za noćni život u igri.</p>
+      <h2>Šta Znamo</h2>
+      <ul>
+        <li>Lokacija: Crosstown, Vice City</li>
+        <li>Vlasnik: Boobie Ike</li>
+        <li>Tip: Strip klub</li>
+      </ul>
+    `
+  },
+  15: {
+    category: "community",
+    categoryName: "COMMUNITY",
+    title: "Pronađen Pravi Stan Jasona i Lucie: Belmar Condominium",
+    date: "Aug 30, 2026",
+    comments: 210,
+    image: "Vice_City_09.jpg",
+    content: `
+      <p>Fanovi su uspeli da pronađu pravu zgradu koja je poslužila kao inspiracija za stan Jasona i Lucie u GTA 6. Reč je o "Belmar Condominium" u Majamiju, koji je, zanimljivo, srušen tokom razvoja igre.</p>
+      <p>Iako je zgrada uklonjena 2022. godine, njen pogled na zaliv Biscayne i raspored prostorija gotovo su identični onima viđenim u trejleru. Ovo otkriće dodatno potvrđuje posvećenost Rockstara detaljima.</p>
+      <h2>Detalji</h2>
+      <ul>
+        <li>Zgrada: Belmar Condominium, Majami</li>
+        <li>Srušena: 2022.</li>
+        <li>Pogled: Zaliv Biscayne</li>
+      </ul>
+    `
+  },
+  16: {
+    category: "news",
+    categoryName: "NEWS",
+    title: "Ulična Scena: Bicikli i Motori u GTA 6",
+    date: "Jul 5, 2026",
+    comments: 67,
+    image: "Vice_City_10.jpg",
+    content: `
+      <p>Novi snimci iz GTA 6 potvrđuju da će bicikli i motori biti važan deo saobraćaja. U trejleru se vidi civil koji vozi bicikl u za to predviđenoj traci, dok se na ulicama mogu primetiti i grupe bajkera.</p>
+      <p>Takođe, AI vozači motora sada će dinamički preticati sporija vozila, što dodatno povećava realizam. Očekuje se i vožnja električnih bicikala, što je novina u serijalu.</p>
+      <h2>Novi Detalji</h2>
+      <ul>
+        <li>Biciklističke trake</li>
+        <li>Grupe bajkera na ulicama</li>
+        <li>Dinamičko preticanje od strane AI vozača</li>
+        <li>Električni bicikli</li>
+      </ul>
+    `
+  },
+  17: {
+    category: "rumors",
+    categoryName: "RUMORS",
+    title: "Priča o Luciji: Zatvorska Scena i Početak Igre",
+    date: "Aug 27, 2026",
+    comments: 312,
+    image: "Lucia_Caminos_05.jpg",
+    content: `
+      <p>Prema navodima iz novog curenja informacija, GTA 6 će započeti scenom u zatvoru u Leonidi, gde vidimo Luciju. Sumnja se da je to uvod u priču, sa flashbackovima koji prikazuju njen život pre hapšenja.</p>
+      <p>Postoje teorije da Lucia sklapa dogovor sa vlastima kako bi izašla iz zatvora, što bi moglo uključivati izdaju njenog partnera Jasona. Rockstar još uvek nije komentarisao ove navode.</p>
+      <h2>Detalji iz Curenja</h2>
+      <ul>
+        <li>Početak igre u zatvoru u Leonidi</li>
+        <li>Flashbackovi o Lucijinom životu pre hapšenja</li>
+        <li>Mogući dogovor sa vlastima</li>
+      </ul>
+    `
+  }
