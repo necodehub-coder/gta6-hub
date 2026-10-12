@@ -112,25 +112,28 @@ const newsArticles = {
     `
   },
   6: {
-    category: "community",
-    categoryName: "COMMUNITY",
-    title: "GTA 6 Fan Art Showcase",
+    category: "official",
+    categoryName: "OFFICIAL",
+    title: "GTA 6 Official Artwork Revealed",
     date: "Apr 5, 2025",
     comments: 56,
-    image: "Grassrivers_03.jpg",
+    image: "IMG_0867.jpeg",
     content: `
-      <p>The community is already creating incredible fan art inspired by the first trailer. Check out our favorite pieces from around the world.</p>
-      <p>From digital paintings to 3D renders, GTA fans have been hard at work creating stunning artwork based on the first trailer. We've collected some of the best pieces to showcase here.</p>
-      <h2>Featured Artists</h2>
-      <p>This week's featured artists include talented creators who have captured the essence of Vice City and its characters:</p>
+      <p>Rockstar Games has released a stunning new piece of official artwork for GTA 6, featuring protagonists Jason and Lucia in a dramatic scene high above Vice City.</p>
+      <p>The artwork shows Jason reaching down to pull Lucia up onto a rooftop structure, while a helicopter flies overhead and the neon-lit skyline of Vice City glows in the background. The iconic "Grand Theft Auto VI" logo appears in the top right corner, with a bold pink "VI" standing out against the sunset sky.</p>
+      <h2>Details in the Artwork</h2>
+      <p>The artwork is packed with small details that hint at the game's story and setting:</p>
       <ul>
-        <li>Digital paintings of Jason and Lucia</li>
-        <li>Neon-soaked Vice City landscapes</li>
-        <li>Vehicle concept art</li>
-        <li>Character redesigns in different art styles</li>
+        <li>Jason and Lucia in a daring rooftop scene</li>
+        <li>Vice City skyline at sunset with neon lights</li>
+        <li>A helicopter and blimp flying over the city</li>
+        <li>The official GTA VI logo with palm tree imagery</li>
+        <li>Text reading "Bigger, Better, Badder" on a billboard</li>
+        <li>The release date "19 NOVEMBRE" subtly written on the structure</li>
       </ul>
-      <h2>How to Get Featured</h2>
-      <p>Want your art featured? Share it with us on social media using the hashtag #GTA6HubArt. We regularly feature the best community creations.</p>
+      <h2>What Fans Are Saying</h2>
+      <p>The community has been quick to analyze every detail, with many pointing out the reference to the November 19, 2026 release date hidden within the artwork. Others have praised Rockstar's artistic direction, noting the perfect blend of 80s Miami aesthetics and modern design.</p>
+      <p>This artwork further builds anticipation for the game's launch and confirms Rockstar's commitment to delivering a visually stunning experience.</p>
     `
   },
   7: {
