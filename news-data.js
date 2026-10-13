@@ -211,13 +211,13 @@ const newsArticles = {
       <p>Thanks for being part of our community!</p>
     `
   },
-  11: {
+ 11: {
     category: "official",
     categoryName: "OFFICIAL",
     title: "GTA 6 Physical Edition Revealed for PS5 and Xbox Series X|S",
     date: "Apr 10, 2025",
     comments: 142,
-    image: "TVOJE_IME_FAJLA.jpg",
+    image: "IMG_0876.jpeg",
     content: `
       <p>Rockstar Games has revealed the first look at the physical edition of GTA 6 for PlayStation 5 and Xbox Series X|S. The cover art features Jason and Lucia in front of a classic muscle car with the Vice City skyline in the background.</p>
       <p>The physical edition will include the game disc, a collector's box, and exclusive in-game content. Pre-orders are expected to open soon.</p>
