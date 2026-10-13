@@ -212,23 +212,24 @@ const newsArticles = {
     `
   },
   11: {
-    category: "rumors",
-    categoryName: "RUMOR",
-    title: "Leaked Gameplay Footage Surfaces Online",
-    date: "Mar 10, 2025",
-    comments: 312,
-    image: "Mount_Kalaga_National_Park_04.jpg",
+    category: "official",
+    categoryName: "OFFICIAL",
+    title: "GTA 6 Physical Edition Revealed for PS5 and Xbox Series X|S",
+    date: "Apr 10, 2025",
+    comments: 142,
+    image: "TVOJE_IME_FAJLA.jpg",
     content: `
-      <p>A new leak has surfaced online showing what appears to be early gameplay footage of GTA 6.</p>
-      <p>The footage, which has not been officially verified, shows several new gameplay mechanics that fans have been speculating about.</p>
-      <h2>What's in the Footage</h2>
+      <p>Rockstar Games has revealed the first look at the physical edition of GTA 6 for PlayStation 5 and Xbox Series X|S. The cover art features Jason and Lucia in front of a classic muscle car with the Vice City skyline in the background.</p>
+      <p>The physical edition will include the game disc, a collector's box, and exclusive in-game content. Pre-orders are expected to open soon.</p>
+      <h2>What's Included</h2>
       <ul>
-        <li>Third-person shooting mechanics</li>
-        <li>Vehicle customization</li>
-        <li>Dynamic weather system</li>
-        <li>New interaction system</li>
+        <li>GTA 6 game disc for PS5 or Xbox Series X|S</li>
+        <li>Collector's box with exclusive artwork</li>
+        <li>Exclusive in-game content and bonuses</li>
+        <li>Pre-order bonus items (TBA)</li>
       </ul>
-      <p>Rockstar has not commented on the leak.</p>
+      <h2>Release Date</h2>
+      <p>GTA 6 is set to launch on November 19, 2026. Pre-orders for the physical edition are expected to open in the coming months.</p>
     `
   },
   12: {
