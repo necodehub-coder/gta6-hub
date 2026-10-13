@@ -1,0 +1,218 @@
+/* VEHICLES HERO */
+.vehicles-hero {
+  position: relative;
+  margin: 20px 30px;
+  padding: 70px 50px;
+  background:
+    linear-gradient(135deg, rgba(10, 5, 20, 0.75), rgba(10, 5, 20, 0.55)),
+    url("IMG_0881.jpeg") center / cover no-repeat;
+  border: 1px solid rgba(255, 76, 164, 0.3);
+  border-radius: 16px;
+  overflow: hidden;
+  min-height: 220px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.vehicles-hero .hero-tag {
+  display: block;
+  color: #ff4ca4;
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 4px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.vehicles-hero h1 {
+  font-size: 72px;
+  color: #fff;
+  font-weight: 900;
+  letter-spacing: 2px;
+  line-height: 1;
+  margin-bottom: 15px;
+  text-shadow: 0 4px 30px rgba(0, 0, 0, 0.8);
+}
+
+.vehicles-hero p {
+  color: #ddd;
+  font-size: 14px;
+  max-width: 500px;
+  line-height: 1.5;
+}
+
+/* FILTERS + SEARCH */
+.vehicles-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px 25px;
+  gap: 15px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  margin: 0 30px;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.vehicles-filters {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.v-filter-btn {
+  background: transparent !important;
+  border: 0 !important;
+  color: #888;
+  padding: 10px 18px !important;
+  border-radius: 4px;
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 1.5px;
+  cursor: pointer;
+  transition: 0.2s;
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
+  text-transform: uppercase;
+}
+
+.v-filter-btn:hover {
+  color: #fff;
+}
+
+.v-filter-btn.active {
+  background: rgba(255, 76, 164, 0.15) !important;
+  color: #ff4ca4 !important;
+  border: 1px solid rgba(255, 76, 164, 0.5) !important;
+}
+
+.vehicles-search {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: transparent;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 6px 4px;
+  min-width: 200px;
+}
+
+.vehicles-search input {
+  background: none;
+  border: 0;
+  outline: 0;
+  color: #fff;
+  font-size: 12px;
+  width: 100%;
+  -webkit-appearance: none;
+}
+
+.vehicles-search input::placeholder {
+  color: #666;
+}
+
+.vehicles-search span {
+  font-size: 12px;
+  opacity: 0.5;
+}
+
+/* VEHICLES GRID */
+.vehicles-grid-section {
+  padding: 30px 30px 20px;
+}
+
+.vehicles-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.vehicle-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background: #0a0a0f;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 4px;
+  overflow: hidden;
+  text-decoration: none;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.vehicle-card:hover {
+  border-color: rgba(255, 76, 164, 0.5);
+  transform: translateY(-3px);
+}
+
+.vehicle-img {
+  width: 100%;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.4s ease;
+}
+
+.vehicle-card:hover .vehicle-img {
+  transform: scale(1.05);
+}
+
+.vehicle-info {
+  padding: 18px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.vehicle-info small {
+  color: #888;
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.vehicle-info h3 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.vehicle-arrow {
+  position: absolute;
+  bottom: 22px;
+  right: 22px;
+  color: #ff4ca4;
+  font-size: 22px;
+  font-weight: 900;
+  transition: 0.3s;
+}
+
+.vehicle-card:hover .vehicle-arrow {
+  transform: translateX(5px);
+}
+
+/* VEHICLES FOOTER */
+.vehicles-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0 10px;
+  margin-top: 30px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.vehicles-footer small {
+  color: #666;
+  font-size: 11px;
+  letter-spacing: 0.5px;
+}
+
+.vehicles-pagination {
+  color: #888;
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 2px;
+}
