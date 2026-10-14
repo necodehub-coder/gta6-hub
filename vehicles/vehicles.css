@@ -217,6 +217,14 @@
   letter-spacing: 2px;
 }
 /* VEHICLES PAGINATION */
+
+.v-page-numbers {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+}
+
 .vehicles-pagination-controls {
   display: flex;
   justify-content: center;
@@ -224,6 +232,7 @@
   gap: 10px;
   margin-top: 40px;
 }
+
 
 .v-page-num {
   background: rgba(17, 19, 26, 0.6) !important;
