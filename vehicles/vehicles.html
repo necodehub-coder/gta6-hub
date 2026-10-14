@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>GTA 6 Hub — Vehicles</title>
 <link rel="stylesheet" href="../style.css?v=100">
-<link rel="stylesheet" href="vehicles.css?v=1">
+<link rel="stylesheet" href="vehicles.css?v=2">
 </head>
 
 <body>
@@ -117,76 +117,8 @@
 
     <!-- VEHICLES GRID -->
     <section class="vehicles-grid-section">
-      <div class="vehicles-grid">
-
-        <!-- VEHICLE 1 -->
-        <a href="#" class="vehicle-card" data-category="cars">
-          <div class="vehicle-img" style="background-image: url('../C7881E46-CB16-4D56-90E5-535C87BD1050.png');"></div>
-          <div class="vehicle-info">
-            <small>SPORTS · COUPE</small>
-            <h3>VORTEX GT</h3>
-          </div>
-          <span class="vehicle-arrow">→</span>
-        </a>
-
-        <!-- VEHICLE 2 -->
-        <a href="#" class="vehicle-card" data-category="cars">
-          <div class="vehicle-img" style="background-image: url('../Vice_City_10.jpg');"></div>
-          <div class="vehicle-info">
-            <small>MUSCLE · CLASSIC</small>
-            <h3>DOMINATOR LX</h3>
-          </div>
-          <span class="vehicle-arrow">→</span>
-        </a>
-
-        <!-- VEHICLE 3 -->
-        <a href="#" class="vehicle-card" data-category="motorcycles">
-          <div class="vehicle-img" style="background-image: url('../Jason_and_Lucia_09.jpg');"></div>
-          <div class="vehicle-info">
-            <small>MOTORCYCLE · CRUISER</small>
-            <h3>SHITZU KATANA</h3>
-          </div>
-          <span class="vehicle-arrow">→</span>
-        </a>
-
-        <!-- VEHICLE 4 -->
-        <a href="#" class="vehicle-card" data-category="boats">
-          <div class="vehicle-img" style="background-image: url('../IMG_0831.jpeg');"></div>
-          <div class="vehicle-info">
-            <small>BOAT · SPEEDBOAT</small>
-            <h3>SQUALO</h3>
-          </div>
-          <span class="vehicle-arrow">→</span>
-        </a>
-
-        <!-- VEHICLE 5 -->
-        <a href="#" class="vehicle-card" data-category="aircraft">
-          <div class="vehicle-img" style="background-image: url('../Vice_City_02.jpg');"></div>
-          <div class="vehicle-info">
-            <small>AIRCRAFT · HELICOPTER</small>
-            <h3>MAVERICK</h3>
-          </div>
-          <span class="vehicle-arrow">→</span>
-        </a>
-
-        <!-- VEHICLE 6 -->
-        <a href="#" class="vehicle-card" data-category="cars">
-          <div class="vehicle-img" style="background-image: url('../Mount_Kalaga_National_Park_04.jpg');"></div>
-          <div class="vehicle-info">
-            <small>SUV · OFF-ROAD</small>
-            <h3>KARIN EVERON</h3>
-          </div>
-          <span class="vehicle-arrow">→</span>
-        </a>
-
-      </div>
-
-      <!-- FOOTER INFO -->
-      <div class="vehicles-footer">
-        <small>A community-built catalogue of vehicles spotted across Leonida.</small>
-        <div class="vehicles-pagination">
-          <span>01 — 03</span>
-        </div>
+      <div class="vehicles-grid" id="vehiclesGrid">
+        <!-- JavaScript popunjava -->
       </div>
     </section>
 
@@ -226,48 +158,53 @@
   </div>
 </footer>
 
-<!-- FILTERS + SEARCH SCRIPT -->
+<!-- VEHICLES DATA + RENDER -->
+<script src="vehicles-data.js"></script>
 <script>
-  // FILTER
-  const vFilterButtons = document.querySelectorAll('.v-filter-btn');
-  const vehicleCards = document.querySelectorAll('.vehicle-card');
+  const grid = document.getElementById('vehiclesGrid');
 
-  vFilterButtons.forEach(button => {
-    button.addEventListener('click', () => {
-      vFilterButtons.forEach(btn => btn.classList.remove('active'));
-      button.classList.add('active');
+  // Render all vehicles
+  function renderVehicles(filter = 'all', search = '') {
+    grid.innerHTML = '';
+    Object.values(vehiclesData).forEach(vehicle => {
+      const matchFilter = filter === 'all' || vehicle.category === filter;
+      const matchSearch = vehicle.name.toLowerCase().includes(search.toLowerCase()) || vehicle.categoryName.toLowerCase().includes(search.toLowerCase());
+      if (matchFilter && matchSearch) {
+        const card = document.createElement('a');
+        card.href = '#';
+        card.className = 'vehicle-card';
+        card.innerHTML = `
+          <div class="vehicle-img" style="background-image: url('${vehicle.image}');"></div>
+          <div class="vehicle-info">
+            <small>${vehicle.categoryName}</small>
+            <h3>${vehicle.name}</h3>
+          </div>
+          <span class="vehicle-arrow">→</span>
+        `;
+        grid.appendChild(card);
+      }
+    });
+  }
 
-      const filter = button.dataset.filter;
+  // Initial render
+  renderVehicles();
 
-      vehicleCards.forEach(card => {
-        if (filter === 'all' || card.dataset.category === filter) {
-          card.style.display = 'flex';
-        } else {
-          card.style.display = 'none';
-        }
-      });
+  // Filters
+  document.querySelectorAll('.v-filter-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.v-filter-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const filter = btn.dataset.filter;
+      const search = document.querySelector('.vehicles-search input').value;
+      renderVehicles(filter, search);
     });
   });
 
-  // SEARCH
-  const vSearchInput = document.querySelector('.vehicles-search input');
-
-  if (vSearchInput) {
-    vSearchInput.addEventListener('input', (e) => {
-      const query = e.target.value.toLowerCase().trim();
-
-      vehicleCards.forEach(card => {
-        const title = card.querySelector('h3').textContent.toLowerCase();
-        const category = card.querySelector('small').textContent.toLowerCase();
-
-        if (title.includes(query) || category.includes(query)) {
-          card.style.display = 'flex';
-        } else {
-          card.style.display = 'none';
-        }
-      });
-    });
-  }
+  // Search
+  document.querySelector('.vehicles-search input').addEventListener('input', (e) => {
+    const activeFilter = document.querySelector('.v-filter-btn.active').dataset.filter;
+    renderVehicles(activeFilter, e.target.value);
+  });
 </script>
 
 </body>
