@@ -120,6 +120,12 @@
       <div class="vehicles-grid" id="vehiclesGrid">
         <!-- JavaScript popunjava -->
       </div>
+      <!-- VEHICLES PAGINATION -->
+      <div class="vehicles-pagination-controls">
+        <button class="v-page-arrow" id="vPrevPage">←</button>
+        <div class="v-page-numbers" id="vPageNumbers"></div>
+        <button class="v-page-arrow" id="vNextPage">→</button>
+      </div>
     </section>
 
   </main>
@@ -162,6 +168,131 @@
 <script src="vehicles-data.js"></script>
 <script>
   const grid = document.getElementById('vehiclesGrid');
+  const pageNumbers = document.getElementById('vPageNumbers');
+  const prevBtn = document.getElementById('vPrevPage');
+  const nextBtn = document.getElementById('vNextPage');
+
+  const PER_PAGE = 9;
+  let currentPage = 1;
+  let currentFilter = 'all';
+  let currentSearch = '';
+
+  function getFilteredVehicles() {
+    return Object.values(vehiclesData).filter(v => {
+      const matchFilter = currentFilter === 'all' || v.category === currentFilter;
+      const matchSearch =
+        v.name.toLowerCase().includes(currentSearch.toLowerCase()) ||
+        v.categoryName.toLowerCase().includes(currentSearch.toLowerCase());
+      return matchFilter && matchSearch;
+    });
+  }
+
+  function renderVehicles() {
+    const filtered = getFilteredVehicles();
+    const totalPages = Math.max(1, Math.ceil(filtered.length / PER_PAGE));
+
+    if (currentPage > totalPages) currentPage = totalPages;
+    if (currentPage < 1) currentPage = 1;
+
+    const start = (currentPage - 1) * PER_PAGE;
+    const end = start + PER_PAGE;
+    const pageVehicles = filtered.slice(start, end);
+
+    grid.innerHTML = '';
+
+    if (pageVehicles.length === 0) {
+      grid.innerHTML = '<p style="color:#888;grid-column:1/-1;text-align:center;padding:40px;">No vehicles found.</p>';
+    } else {
+      pageVehicles.forEach(vehicle => {
+        const card = document.createElement('a');
+        card.href = '#';
+        card.className = 'vehicle-card';
+        card.innerHTML = `
+          <div class="vehicle-img" style="background-image: url('${vehicle.image}');"></div>
+          <div class="vehicle-info">
+            <small>${vehicle.categoryName}</small>
+            <h3>${vehicle.name}</h3>
+          </div>
+          <span class="vehicle-arrow">→</span>
+        `;
+        grid.appendChild(card);
+      });
+    }
+
+    renderPagination(totalPages);
+    updateArrows(totalPages);
+  }
+
+  function renderPagination(totalPages) {
+    pageNumbers.innerHTML = '';
+    for (let i = 1; i <= totalPages; i++) {
+      const btn = document.createElement('button');
+      btn.className = 'v-page-num';
+      btn.textContent = i;
+      if (i === currentPage) btn.classList.add('active');
+      btn.addEventListener('click', () => {
+        currentPage = i;
+        renderVehicles();
+      });
+      pageNumbers.appendChild(btn);
+    }
+  }
+
+  function updateArrows(totalPages) {
+    if (currentPage === 1) {
+      prevBtn.disabled = true;
+      prevBtn.style.opacity = '0.3';
+      prevBtn.style.cursor = 'not-allowed';
+    } else {
+      prevBtn.disabled = false;
+      prevBtn.style.opacity = '1';
+      prevBtn.style.cursor = 'pointer';
+    }
+
+    if (currentPage >= totalPages) {
+      nextBtn.disabled = true;
+      nextBtn.style.opacity = '0.3';
+      nextBtn.style.cursor = 'not-allowed';
+    } else {
+      nextBtn.disabled = false;
+      nextBtn.style.opacity = '1';
+      nextBtn.style.cursor = 'pointer';
+    }
+  }
+
+  prevBtn.addEventListener('click', () => {
+    if (currentPage > 1) {
+      currentPage--;
+      renderVehicles();
+    }
+  });
+
+  nextBtn.addEventListener('click', () => {
+    const totalPages = Math.max(1, Math.ceil(getFilteredVehicles().length / PER_PAGE));
+    if (currentPage < totalPages) {
+      currentPage++;
+      renderVehicles();
+    }
+  });
+
+  document.querySelectorAll('.v-filter-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.v-filter-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      currentFilter = btn.dataset.filter;
+      currentPage = 1;
+      renderVehicles();
+    });
+  });
+
+  document.querySelector('.vehicles-search input').addEventListener('input', (e) => {
+    currentSearch = e.target.value;
+    currentPage = 1;
+    renderVehicles();
+  });
+
+  renderVehicles();
+</script>
 
   // Render all vehicles
   function renderVehicles(filter = 'all', search = '') {
