@@ -162,7 +162,8 @@
     <span>ROCKSTAR</span>
     <small>GAMES</small>
   </div>
-</footer>
+
+  </footer>
 
 <!-- VEHICLES DATA + RENDER -->
 <script src="vehicles-data.js"></script>
@@ -294,49 +295,7 @@
   renderVehicles();
 </script>
 
-  // Render all vehicles
-  function renderVehicles(filter = 'all', search = '') {
-    grid.innerHTML = '';
-    Object.values(vehiclesData).forEach(vehicle => {
-      const matchFilter = filter === 'all' || vehicle.category === filter;
-      const matchSearch = vehicle.name.toLowerCase().includes(search.toLowerCase()) || vehicle.categoryName.toLowerCase().includes(search.toLowerCase());
-      if (matchFilter && matchSearch) {
-        const card = document.createElement('a');
-        card.href = '#';
-        card.className = 'vehicle-card';
-        card.innerHTML = `
-          <div class="vehicle-img" style="background-image: url('${vehicle.image}');"></div>
-          <div class="vehicle-info">
-            <small>${vehicle.categoryName}</small>
-            <h3>${vehicle.name}</h3>
-          </div>
-          <span class="vehicle-arrow">→</span>
-        `;
-        grid.appendChild(card);
-      }
-    });
-  }
 
-  // Initial render
-  renderVehicles();
-
-  // Filters
-  document.querySelectorAll('.v-filter-btn').forEach(btn => {
-    btn.addEventListener('click', () => {
-      document.querySelectorAll('.v-filter-btn').forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-      const filter = btn.dataset.filter;
-      const search = document.querySelector('.vehicles-search input').value;
-      renderVehicles(filter, search);
-    });
-  });
-
-  // Search
-  document.querySelector('.vehicles-search input').addEventListener('input', (e) => {
-    const activeFilter = document.querySelector('.v-filter-btn.active').dataset.filter;
-    renderVehicles(activeFilter, e.target.value);
-  });
-</script>
 
 </body>
 </html>
