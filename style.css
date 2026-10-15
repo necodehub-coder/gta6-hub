@@ -21,8 +21,8 @@ body {
   text-align: left;
   padding: 120px 60px 60px;
   background:
-    linear-gradient(rgba(0,0,0,.65), rgba(0,0,0,.75)),
-    url("829FAF68-1581-4793-B1B5-91677BBCD508.png");
+    linear-gradient(rgba(10, 5, 20, 0.25), rgba(10, 5, 20, 0.75)),
+    url("989C5226-C486-4909-80CF-B9C34F54B497.png") center / cover no-repeat;
   background-size: cover;
   background-position: center;
 }
