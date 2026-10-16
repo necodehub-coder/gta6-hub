@@ -185,60 +185,44 @@ button:hover {
 /* SIDEBAR BRAND */
 .sidebar-brand {
   display: flex;
-  align-items: flex-end;
-  gap: 4px;
+  flex-direction: column;
+  gap: 2px;
   padding: 0 0 25px 0;
   border-bottom: 1px solid #1a1a1a;
   margin-bottom: 20px;
-  white-space: nowrap;
 }
 
-.brand-gta {
-  display: flex;
-  flex-direction: column;
-  line-height: 0.9;
-}
-
-.brand-gta span {
-  color: #fff;
-  font-size: 14px;
-  font-weight: 900;
-  text-transform: lowercase;
-  font-family: 'Arial Black', sans-serif;
-  letter-spacing: -1px;
-  line-height: 0.95;
-  display: block;
-}
-
-.brand-main {
-  display: flex;
-  flex-direction: column;
-  line-height: 0.85;
-}
-
-.brand-vi {
+.brand-neon {
   color: #ff4ca4;
-  font-size: 42px;
+  font-size: 26px;
   font-weight: 900;
   font-style: italic;
   font-family: 'Arial Black', sans-serif;
-  background: linear-gradient(135deg, #ff4ca4, #a77cff);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  line-height: 0.85;
-  display: block;
+  letter-spacing: 1px;
+  line-height: 1;
+  text-shadow:
+    0 0 10px rgba(255, 76, 164, 0.8),
+    0 0 20px rgba(255, 76, 164, 0.5);
+}
+
+.brand-palms {
+  color: #fff;
+  font-size: 22px;
+  font-weight: 900;
+  font-family: 'Arial Black', sans-serif;
+  letter-spacing: 4px;
+  line-height: 1;
+  margin-top: 2px;
 }
 
 .brand-hub {
   color: #ff4ca4;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 400;
   font-style: italic;
   font-family: 'Brush Script MT', 'Lucida Handwriting', cursive;
-  letter-spacing: 2px;
-  display: block;
-  margin-top: -4px;
+  letter-spacing: 3px;
+  margin-top: 4px;
   text-shadow: 0 0 10px rgba(255, 76, 164, 0.5);
 }
 
