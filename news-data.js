@@ -186,7 +186,7 @@ const newsArticles = {
     title: "Industrial District: Factories and Railways",
     date: "Mar 15, 2025",
     comments: 42,
-    image: "6DBCF711-24EF-427F-8E88-E3D6C3C7D451.png",
+    image: "8B518B1C-0CC7-4B1D-A175-EABD0F0AEB9B.png",
     content: `
       <p>Not every part of the city is a glamorous beachfront. The industrial district offers a gritty, working-class contrast to the neon lights of downtown.</p>
       <p>Featuring massive factories, shipping containers, and sprawling railway networks, this area is a hub of activity. It looks like the perfect setting for heists, smuggling operations, or intense firefights.</p>
