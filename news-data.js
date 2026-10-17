@@ -26,7 +26,7 @@ const newsArticles = {
     title: "New Screenshots Reveal More of the Neon City",
     date: "Apr 28, 2025",
     comments: 89,
-    image: "6098E9FF-1CC4-4A17-8DC3-OBF0200915B5.png",
+    image: "6098E9FF-1CC4-4A17-8DC3-0BF0200915B5.png",
     content: `
       <p>The developers have released a set of new screenshots showing the stunning world of the neon city. From the beaches to the nightlife, the game looks more alive than ever.</p>
       <p>These screenshots give us a deeper look into the environments players will explore when the game launches. The level of detail in the reflections, lighting, and character models is truly next-generation.</p>
