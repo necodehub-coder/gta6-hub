@@ -2,48 +2,43 @@ const newsArticles = {
   1: {
     category: "official",
     categoryName: "OFFICIAL",
-    title: "Rockstar Confirms GTA 6 Trailer 2 Coming Soon",
+    title: "Studio Confirms Trailer 2 is Coming Soon",
     date: "May 8, 2025",
     comments: 124,
-    image: "829FAF68-1581-4793-B1B5-91677BBCD508.png",
+    image: "6F2FA1A0-0C16-4FB6-AE0B-DBCDDA92CCB8.png",
     content: `
-      <p>Rockstar Games has officially confirmed that the second trailer for GTA 6 is on the way. In a brief statement released earlier today, the studio announced that new details about the release window and what to expect will be shared in the coming weeks.</p>
-      <p>This confirmation comes after months of speculation from fans who have been eagerly awaiting more information about the highly anticipated title. The first trailer, released in December 2023, broke YouTube records and gave players their first look at Vice City and the new protagonist duo, Jason and Lucia.</p>
+      <p>The development studio has officially confirmed that the second trailer for the highly anticipated game is on the way. In a brief statement released earlier today, the team announced that new details about the release window and what to expect will be shared in the coming weeks.</p>
+      <p>This confirmation comes after months of speculation from fans who have been eagerly awaiting more information. The first trailer broke streaming records and gave players their first look at the new neon city and the new protagonist duo.</p>
       <h2>What to Expect from Trailer 2</h2>
-      <p>While Rockstar has kept details under wraps, industry insiders suggest that the second trailer will focus more on gameplay elements, including:</p>
+      <p>While details are kept under wraps, industry insiders suggest that the second trailer will focus more on gameplay elements, including:</p>
       <ul>
         <li>New vehicles and customization options</li>
-        <li>Expanded map details showing more of Leonida</li>
-        <li>More screen time for both Jason and Lucia</li>
-        <li>First look at the game's updated RAGE engine</li>
+        <li>Expanded map details showing more of the state</li>
+        <li>More screen time for both main characters</li>
+        <li>First look at the updated game engine</li>
       </ul>
-      <p>The trailer is expected to drop sometime in the next few months, with some sources suggesting it could arrive before the end of Q3 2025.</p>
-      <h2>Release Date Still Set for November 19, 2026</h2>
-      <p>Despite the ongoing wait for new footage, Rockstar has maintained that GTA 6 will launch on November 19, 2026, for PlayStation 5 and Xbox Series X|S. A PC version has not been officially announced, but is expected to follow later.</p>
-      <p>Stay tuned to GTA 6 Hub for all the latest updates as they become available.</p>
+      <p>Stay tuned to Neon Palms Hub for all the latest updates as they become available.</p>
     `
   },
   2: {
     category: "news",
     categoryName: "NEWS",
-    title: "New Screenshots Reveal More of Vice City",
+    title: "New Screenshots Reveal More of the Neon City",
     date: "Apr 28, 2025",
     comments: 89,
-    image: "IMG_0831.jpeg",
+    image: "6098E9FF-1CC4-4A17-8DC3-OBF0200915B5.png",
     content: `
-      <p>Rockstar has released a set of new screenshots showing the stunning world of Vice City. From the beaches to the nightlife, the game looks more alive than ever.</p>
-      <p>These screenshots give us a deeper look into the environments players will explore when GTA 6 launches. The level of detail in the reflections, lighting, and character models is truly next-generation.</p>
-      <h2>Vice City Comes to Life</h2>
-      <p>The new screenshots showcase various locations across Vice City, including:</p>
+      <p>The developers have released a set of new screenshots showing the stunning world of the neon city. From the beaches to the nightlife, the game looks more alive than ever.</p>
+      <p>These screenshots give us a deeper look into the environments players will explore when the game launches. The level of detail in the reflections, lighting, and character models is truly next-generation.</p>
+      <h2>The City Comes to Life</h2>
+      <p>The new screenshots showcase various locations, including:</p>
       <ul>
-        <li>The iconic Ocean Drive with neon signs</li>
-        <li>Downtown Vice City skyscrapers</li>
+        <li>The iconic ocean drive with neon signs</li>
+        <li>Downtown skyscrapers</li>
         <li>The beach promenade at sunset</li>
         <li>Nightclub districts with vibrant nightlife</li>
       </ul>
-      <p>Each image reveals the incredible attention to detail that Rockstar is known for, with dynamic weather, realistic water reflections, and beautifully crafted environments.</p>
-      <h2>What Fans Are Saying</h2>
-      <p>The GTA community has been quick to analyze every pixel of these new screenshots, finding hidden details and easter eggs that hint at gameplay features.</p>
+      <p>Each image reveals the incredible attention to detail, with dynamic weather, realistic water reflections, and beautifully crafted environments.</p>
     `
   },
   3: {
@@ -52,10 +47,10 @@ const newsArticles = {
     title: "Interactive Map Now Live",
     date: "Apr 20, 2025",
     comments: 67,
-    image: "C65D727B-AC5B-4603-906D-A6E5A848D5DF.png",
+    image: "F7D51F39-AEF1-436A-9AE2-F201EC66A4B1.png",
     content: `
-      <p>Explore Vice City and the surrounding areas in detail with our new interactive map. Discover locations, points of interest, collectibles and more.</p>
-      <p>Our team has been working hard to create a comprehensive interactive map that will help you navigate the world of GTA 6. Whether you're looking for mission locations, hidden secrets, or just want to explore the map in detail, our interactive map has you covered.</p>
+      <p>Explore the open world in detail with our new interactive map. Discover locations, points of interest, collectibles and more.</p>
+      <p>Our team has been working hard to create a comprehensive interactive map that will help you navigate the world. Whether you're looking for mission locations, hidden secrets, or just want to explore the map in detail, we have you covered.</p>
       <h2>Features of Our Interactive Map</h2>
       <ul>
         <li>Detailed locations of all points of interest</li>
@@ -63,8 +58,6 @@ const newsArticles = {
         <li>Zoom and pan controls</li>
         <li>Track your exploration progress</li>
       </ul>
-      <h2>How to Use the Map</h2>
-      <p>Simply click on any marker to see more details about that location. You can filter markers, search for specific locations, and track your progress as you explore Vice City.</p>
       <p>Visit our interactive map now and start exploring!</p>
     `
   },
@@ -74,66 +67,59 @@ const newsArticles = {
     title: "Possible Release Date Leaked?",
     date: "Apr 15, 2025",
     comments: 210,
-    image: "713B8D01-E64C-4222-BC67-F849157B0B5C.png",
+    image: "5CD923AF-A811-4F4D-9080-B79088EBD734.png",
     content: `
-      <p>A new leak suggests that GTA 6 could be released earlier than expected. While Rockstar hasn't confirmed anything yet, the rumor is gaining traction among the community.</p>
-      <p>The leak comes from a source that has previously provided accurate information about Rockstar's projects. According to them, the game might be ready for launch sooner than the officially announced November 19, 2026 date.</p>
+      <p>A new leak suggests that the game could be released earlier than expected. While the studio hasn't confirmed anything yet, the rumor is gaining traction among the community.</p>
+      <p>The leak comes from a source that has previously provided accurate information. According to them, the game might be ready for launch sooner than the officially announced date.</p>
       <h2>What We Know So Far</h2>
-      <p>Rockstar has officially stated that GTA 6 will launch on November 19, 2026. However, the studio has a history of delaying games, so fans are understandably skeptical.</p>
+      <p>The studio has officially stated that the game will launch in late 2026. However, the team has a history of delays, so fans are understandably skeptical.</p>
       <ul>
         <li>Official release date: November 19, 2026</li>
-        <li>Platforms: PlayStation 5 and Xbox Series X|S</li>
+        <li>Platforms: Current-gen consoles</li>
         <li>PC version: Not yet announced</li>
       </ul>
-      <h2>Should We Believe the Rumor?</h2>
-      <p>As with any leak, it's important to take this information with a grain of salt. Rockstar has not made any official statements about an earlier release, and the November 2026 date remains the only confirmed information.</p>
-      <p>We'll continue to monitor the situation and update this article if any new information becomes available.</p>
+      <p>As with any leak, it's important to take this information with a grain of salt.</p>
     `
   },
   5: {
-    category: "news",
-    categoryName: "NEWS",
-    title: "Rockstar Teases New City in Trailer 2",
+    category: "official",
+    categoryName: "OFFICIAL",
+    title: "Studio Teases New City in Trailer 2",
     date: "Apr 10, 2025",
     comments: 142,
-    image: "Leonida_Keys_04.jpg",
+    image: "ADC33D20-A2F6-402A-82B5-9DAE120AD99F.png",
     content: `
       <p>Fans believe the second trailer will reveal more about the second major city, possibly featuring new locations and activities.</p>
-      <p>The first trailer focused primarily on Vice City, but Rockstar has hinted that the game will feature more than one major city. The state of Leonida appears to be much larger than previously thought.</p>
+      <p>The first trailer focused primarily on the neon city, but the studio has hinted that the game will feature more than one major area. The state appears to be much larger than previously thought.</p>
       <h2>What Could the Second City Be?</h2>
       <p>Based on leaks and speculation, the second city might be inspired by real-world locations such as:</p>
       <ul>
-        <li>Orlando (theme parks and attractions)</li>
-        <li>Tampa (waterfront and Cuban culture)</li>
-        <li>Jacksonville (industrial and northern Florida vibes)</li>
+        <li>Theme parks and attractions</li>
+        <li>Waterfront and Cuban culture</li>
+        <li>Industrial and northern vibes</li>
       </ul>
-      <h2>What Fans Want to See</h2>
-      <p>The GTA community is hoping for a diverse map with distinct regions, each with its own atmosphere, culture, and activities. Whether it's a bustling city, a quiet town, or a vast wilderness, players want variety.</p>
+      <p>The community is hoping for a diverse map with distinct regions, each with its own atmosphere and culture.</p>
     `
   },
   6: {
     category: "official",
     categoryName: "OFFICIAL",
-    title: "GTA 6 Official Artwork Revealed",
+    title: "Official Artwork Revealed for the Upcoming Game",
     date: "Apr 5, 2025",
     comments: 56,
-    image: "IMG_0867.jpeg",
+    image: "350424CB-0E22-40DB-8345-23D9D265A0CD.png",
     content: `
-      <p>Rockstar Games has released a stunning new piece of official artwork for GTA 6, featuring protagonists Jason and Lucia in a dramatic scene high above Vice City.</p>
-      <p>The artwork shows Jason reaching down to pull Lucia up onto a rooftop structure, while a helicopter flies overhead and the neon-lit skyline of Vice City glows in the background. The iconic "Grand Theft Auto VI" logo appears in the top right corner, with a bold pink "VI" standing out against the sunset sky.</p>
+      <p>The studio has released a stunning new piece of official artwork, featuring the protagonists in a dramatic scene high above the city.</p>
+      <p>The artwork shows the main characters in a daring scene, while a helicopter flies overhead and the neon-lit skyline glows in the background. The iconic logo appears in the top right corner.</p>
       <h2>Details in the Artwork</h2>
       <p>The artwork is packed with small details that hint at the game's story and setting:</p>
       <ul>
-        <li>Jason and Lucia in a daring rooftop scene</li>
-        <li>Vice City skyline at sunset with neon lights</li>
+        <li>The main characters in a daring rooftop scene</li>
+        <li>City skyline at sunset with neon lights</li>
         <li>A helicopter and blimp flying over the city</li>
-        <li>The official GTA VI logo with palm tree imagery</li>
-        <li>Text reading "Bigger, Better, Badder" on a billboard</li>
-        <li>The release date "19 NOVEMBRE" subtly written on the structure</li>
+        <li>The official logo with palm tree imagery</li>
       </ul>
-      <h2>What Fans Are Saying</h2>
-      <p>The community has been quick to analyze every detail, with many pointing out the reference to the November 19, 2026 release date hidden within the artwork. Others have praised Rockstar's artistic direction, noting the perfect blend of 80s Miami aesthetics and modern design.</p>
-      <p>This artwork further builds anticipation for the game's launch and confirms Rockstar's commitment to delivering a visually stunning experience.</p>
+      <p>This artwork further builds anticipation for the game's launch and confirms the studio's commitment to delivering a visually stunning experience.</p>
     `
   },
   7: {
