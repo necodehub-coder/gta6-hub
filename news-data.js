@@ -123,118 +123,118 @@ const newsArticles = {
     `
   },
   7: {
-    category: "trailers",
-    categoryName: "TRAILERS",
-    title: "GTA 6 Trailer 1 — Breakdown and Analysis",
+    category: "news",
+    categoryName: "NEWS",
+    title: "Inside the Ink: New Tattoo Parlor Revealed",
     date: "Apr 1, 2025",
     comments: 305,
-    image: "Jason_and_Lucia_Robbery_landscape.jpg",
+    image: "534F1B4A-7134-4563-9444-A9DAEBFOF6CB.png",
     content: `
-      <p>Every detail from the first GTA 6 trailer analyzed. From the characters to the locations, here's everything we spotted.</p>
-      <p>The first GTA 6 trailer broke YouTube records when it was released in December 2023. Now, we're taking a deep dive into every frame to uncover hidden details.</p>
-      <h2>Characters</h2>
-      <p>The trailer introduced us to the main duo: Jason and Lucia. Both characters appear to be involved in a Bonnie-and-Clyde style story, suggesting a crime-filled adventure through Vice City.</p>
-      <h2>Locations Spotted</h2>
+      <p>We got a deep dive into one of the neon-lit businesses in the city: a high-end tattoo parlor. The environment is packed with incredible detail, from the tattoo chairs to the wall art.</p>
+      <p>This location hints at the deep customization options players might expect. The atmosphere perfectly captures the retro, neon-soaked vibe of the game world.</p>
+      <h2>Details in the Design</h2>
       <ul>
-        <li>Ocean Drive with its iconic hotels</li>
-        <li>Vice Beach at sunset</li>
-        <li>Downtown Vice City</li>
-        <li>Various inland areas of Leonida</li>
+        <li>Neon palm tree art on the walls</li>
+        <li>Detailed character models getting inked</li>
+        <li>Sunlit view of the city streets outside</li>
       </ul>
-      <h2>Hidden Details</h2>
-      <p>Fans have spotted numerous easter eggs and references hidden throughout the trailer, including references to previous GTA games and hints about gameplay features.</p>
+      <p>Stay tuned to Neon Palms Hub for more location reveals!</p>
     `
   },
   8: {
     category: "official",
     categoryName: "OFFICIAL",
-    title: "GTA 6 Release Window Officially Confirmed",
+    title: "Scenic Routes: Exploring the Red Canyons",
     date: "Mar 28, 2025",
     comments: 456,
-    image: "Jason_and_Lucia_09.jpg",
+    image: "559F359B-0968-44F8-ADD5-3D61220491F0.png",
     content: `
-      <p>Rockstar has officially confirmed the release window for GTA 6. The game will launch on November 19, 2026 for PlayStation 5 and Xbox Series X|S.</p>
-      <p>This announcement comes after months of speculation and rumors about delays. Fans can now rest assured that the game is on track for its planned release.</p>
-      <h2>Official Statement</h2>
-      <p>In a recent press release, Rockstar Games stated: "We are excited to confirm that GTA 6 will launch on November 19, 2026. Our team has been working tirelessly to deliver the most immersive open-world experience yet."</p>
-      <p>Stay tuned for more updates.</p>
+      <p>Beyond the bustling city streets lies a vast, wild landscape waiting to be explored. The newly revealed Red Canyons showcase the diverse geography of the game world.</p>
+      <p>From winding mountain roads to massive rock formations, this area looks perfect for high-speed chases or scenic drives. The lighting engine brings the red rock and turquoise water to life.</p>
+      <h2>What We Know</h2>
+      <p>The canyons are likely to feature various activities, including:</p>
+      <ul>
+        <li>Off-road racing and stunt jumps</li>
+        <li>Hidden collectibles and secrets</li>
+        <li>Scenic viewpoints with dynamic weather</li>
+      </ul>
+      <p>This location is sure to be a favorite for players who love to explore off the beaten path.</p>
     `
   },
   9: {
     category: "news",
     categoryName: "NEWS",
-    title: "New Details About Jason and Lucia's Story",
+    title: "Airboat Tours: Navigating the Dangerous Swamps",
     date: "Mar 20, 2025",
     comments: 178,
-    image: "Jason_and_Lucia_10.jpg",
+    image: "834B7642-A003-468A-8EC5-E51BC3F3273A.png",
     content: `
-      <p>New details have emerged about the story of Jason and Lucia, the two main protagonists of GTA 6.</p>
-      <p>According to insiders, the game will follow a Bonnie-and-Clyde style narrative, with the two characters embarking on a crime spree across the state of Leonida.</p>
-      <h2>What We Know</h2>
+      <p>The swamps are alive with danger and beauty. New footage shows airboat tours navigating the murky waters, surrounded by lush vegetation and wildlife.</p>
+      <p>The environment looks incredibly immersive, with realistic water physics and dense foliage. But players should be careful—the local wildlife, including massive alligators, is never far away.</p>
+      <h2>Activities in the Swamp</h2>
       <ul>
-        <li>Both characters are playable throughout the story</li>
-        <li>Their relationship evolves based on player choices</li>
-        <li>The narrative spans multiple cities and regions</li>
+        <li>Airboat racing</li>
+        <li>Wildlife photography (or hunting)</li>
+        <li>Hidden stashes and smuggler camps</li>
       </ul>
+      <p>Will you be brave enough to explore these dangerous wetlands?</p>
     `
   },
   10: {
     category: "updates",
     categoryName: "UPDATE",
-    title: "GTA 6 Hub — New Features Added",
+    title: "Industrial District: Factories and Railways",
     date: "Mar 15, 2025",
     comments: 42,
-    image: "Ambrosia_02.jpg",
+    image: "6DBCF711-24EF-427F-8E88-E3D6C3C7D451.png",
     content: `
-      <p>We've been hard at work adding new features to GTA 6 Hub. Here's what's new.</p>
-      <h2>What's New</h2>
+      <p>Not every part of the city is a glamorous beachfront. The industrial district offers a gritty, working-class contrast to the neon lights of downtown.</p>
+      <p>Featuring massive factories, shipping containers, and sprawling railway networks, this area is a hub of activity. It looks like the perfect setting for heists, smuggling operations, or intense firefights.</p>
+      <h2>Key Features</h2>
       <ul>
-        <li>Interactive Vice City map with markers</li>
-        <li>Vehicle database with stats</li>
-        <li>News section with filtering and search</li>
-        <li>Community forum (coming soon)</li>
+        <li>Train yards and moving locomotives</li>
+        <li>Smokestacks and industrial architecture</li>
+        <li>Highway overpasses and tunnels</li>
       </ul>
-      <p>Thanks for being part of our community!</p>
+      <p>We can't wait to see how this area plays into the game's story.</p>
     `
   },
- 11: {
-    category: "official",
-    categoryName: "OFFICIAL",
-    title: "GTA 6 Physical Edition Revealed for PS5 and Xbox Series X|S",
-    date: "Apr 10, 2025",
-    comments: 142,
-    image: "IMG_0876.jpeg",
+  11: {
+    category: "news",
+    categoryName: "NEWS",
+    title: "Sun, Sand, and Surf: A Day at the Beach",
+    date: "Mar 10, 2025",
+    comments: 312,
+    image: "8B518B1C-OCC7-4B1D-A175-EABDOF0AEB9B.png",
     content: `
-      <p>Rockstar Games has revealed the first look at the physical edition of GTA 6 for PlayStation 5 and Xbox Series X|S. The cover art features Jason and Lucia in front of a classic muscle car with the Vice City skyline in the background.</p>
-      <p>The physical edition will include the game disc, a collector's box, and exclusive in-game content. Pre-orders are expected to open soon.</p>
-      <h2>What's Included</h2>
+      <p>The beaches are the heart and soul of the city. New screenshots showcase a vibrant, sun-drenched coastline packed with life.</p>
+      <p>From sunbathers and lifeguard towers to jet skis and helicopters flying overhead, the beach looks incredibly dynamic. The water rendering and lighting effects are truly next-generation.</p>
+      <h2>Beach Life</h2>
       <ul>
-        <li>GTA 6 game disc for PS5 or Xbox Series X|S</li>
-        <li>Collector's box with exclusive artwork</li>
-        <li>Exclusive in-game content and bonuses</li>
-        <li>Pre-order bonus items (TBA)</li>
+        <li>Dynamic crowds of NPCs</li>
+        <li>Water sports and activities</li>
+        <li>Beautiful sunset views</li>
       </ul>
-      <h2>Release Date</h2>
-      <p>GTA 6 is set to launch on November 19, 2026. Pre-orders for the physical edition are expected to open in the coming months.</p>
+      <p>It's the perfect place to relax, or to start a high-speed boat chase!</p>
     `
   },
   12: {
     category: "community",
     categoryName: "COMMUNITY",
-    title: "GTA 6 Fan Theories That Might Be True",
+    title: "Diving Deep: Exploring the Coral Reefs",
     date: "Mar 5, 2025",
     comments: 94,
-    image: "Grassrivers_03.jpg",
+    image: "8B518B1C-OCC7-4B1D-A175-EABDOF0AEB9B.png",
     content: `
-      <p>The GTA community has some incredible theories about GTA 6. Here are some of the most convincing ones.</p>
-      <h2>Popular Theories</h2>
+      <p>The world doesn't end at the shoreline. Beneath the crystal-clear waters lies a vibrant, living coral reef waiting to be discovered.</p>
+      <p>New underwater footage reveals a stunning ecosystem filled with tropical fish, sea turtles, and sunken treasures. The underwater lighting and particle effects create a truly immersive experience.</p>
+      <h2>Underwater Exploration</h2>
       <ul>
-        <li>The game will feature a dynamic economy system</li>
-        <li>Multiple endings based on player choices</li>
-        <li>Returning characters from previous GTA games</li>
-        <li>Seasonal weather and events</li>
+        <li>Scuba diving and snorkeling</li>
+        <li>Hidden shipwrecks and loot</li>
+        <li>Stunning marine wildlife</li>
       </ul>
-      <p>While none of these are confirmed, they're fun to think about!</p>
+      <p>Grab your scuba gear and explore the depths of the ocean!</p>
     `
   },
   13: {
