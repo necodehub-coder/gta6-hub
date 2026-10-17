@@ -147,7 +147,7 @@ const newsArticles = {
     title: "Scenic Routes: Exploring the Red Canyons",
     date: "Mar 28, 2025",
     comments: 456,
-    image: "559F359B-0968-44F8-ADD5-3D61220491F0.png",
+    image: "834B7642-A003-468A-8EC5-E51BC3F3273A.png",
     content: `
       <p>Beyond the bustling city streets lies a vast, wild landscape waiting to be explored. The newly revealed Red Canyons showcase the diverse geography of the game world.</p>
       <p>From winding mountain roads to massive rock formations, this area looks perfect for high-speed chases or scenic drives. The lighting engine brings the red rock and turquoise water to life.</p>
@@ -167,7 +167,7 @@ const newsArticles = {
     title: "Airboat Tours: Navigating the Dangerous Swamps",
     date: "Mar 20, 2025",
     comments: 178,
-    image: "834B7642-A003-468A-8EC5-E51BC3F3273A.png",
+    image: "534F1B4A-7134-4563-9444-A9DAEBF0F6CB.png",
     content: `
       <p>The swamps are alive with danger and beauty. New footage shows airboat tours navigating the murky waters, surrounded by lush vegetation and wildlife.</p>
       <p>The environment looks incredibly immersive, with realistic water physics and dense foliage. But players should be careful—the local wildlife, including massive alligators, is never far away.</p>
@@ -205,7 +205,7 @@ const newsArticles = {
     title: "Sun, Sand, and Surf: A Day at the Beach",
     date: "Mar 10, 2025",
     comments: 312,
-    image: "8B518B1C-OCC7-4B1D-A175-EABDOF0AEB9B.png",
+    image: "58BB5841-D673-493A-ACDB-929280610DD5.png",
     content: `
       <p>The beaches are the heart and soul of the city. New screenshots showcase a vibrant, sun-drenched coastline packed with life.</p>
       <p>From sunbathers and lifeguard towers to jet skis and helicopters flying overhead, the beach looks incredibly dynamic. The water rendering and lighting effects are truly next-generation.</p>
@@ -224,7 +224,7 @@ const newsArticles = {
     title: "Diving Deep: Exploring the Coral Reefs",
     date: "Mar 5, 2025",
     comments: 94,
-    image: "8B518B1C-OCC7-4B1D-A175-EABDOF0AEB9B.png",
+    image: "6DBCF711-24EF-427F-8E88-E3D6C3C7D451.png",
     content: `
       <p>The world doesn't end at the shoreline. Beneath the crystal-clear waters lies a vibrant, living coral reef waiting to be discovered.</p>
       <p>New underwater footage reveals a stunning ecosystem filled with tropical fish, sea turtles, and sunken treasures. The underwater lighting and particle effects create a truly immersive experience.</p>
