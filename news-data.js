@@ -128,7 +128,7 @@ const newsArticles = {
     title: "Inside the Ink: New Tattoo Parlor Revealed",
     date: "Apr 1, 2025",
     comments: 305,
-    image: "534F1B4A-7134-4563-9444-A9DAEBFOF6CB.png",
+    image: "559F359B-0968-44F8-ADD5-3D61220491F0.png",
     content: `
       <p>We got a deep dive into one of the neon-lit businesses in the city: a high-end tattoo parlor. The environment is packed with incredible detail, from the tattoo chairs to the wall art.</p>
       <p>This location hints at the deep customization options players might expect. The atmosphere perfectly captures the retro, neon-soaked vibe of the game world.</p>
