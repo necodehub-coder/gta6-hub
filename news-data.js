@@ -237,95 +237,95 @@ const newsArticles = {
       <p>Grab your scuba gear and explore the depths of the ocean!</p>
     `
   },
-  13: {
+13: {
     category: "news",
     categoryName: "NEWS",
-    title: "New Vice City District Revealed: Construction Sites & Architecture",
+    title: "Neon Nights: Inside the City's Hottest Club",
     date: "Jun 20, 2026",
     comments: 142,
-    image: "Vice_City_02.jpg",
+    image: "F3C38773-8976-4720-8D18-272784AD82CA.png",
     content: `
-      <p>A new GTA 6 clip reveals the impressive scale of Vice City, which surpasses Los Santos. The footage shows dense streets, boats, helicopters, and buildings under construction.</p>
-      <p>Particularly notable is a large construction site with a skyscraper being built, continuing the tradition of the "Mile High Club" building from previous titles. Additionally, the map features a complex inspired by the Brickell on the River building, located in the Tequesta neighborhood.</p>
-      <h2>Details from the Trailer</h2>
+      <p>The nightlife is a massive part of the city's culture. New screenshots reveal the interior of one of the most exclusive nightclubs in town, owned by a local business figure.</p>
+      <p>From the neon-lit bars to the massive dance floor and VIP booths, the level of detail is staggering. This location is expected to be a major hub for socializing, conducting business, and maybe even meeting new contacts.</p>
+      <h2>What to Expect Inside</h2>
       <ul>
-        <li>Construction site with a skyscraper (Mile High Club)</li>
-        <li>Complex inspired by the Brickell on the River building</li>
-        <li>Dense streets, boats, and helicopters</li>
+        <li>Dynamic NPC crowds and DJ sets</li>
+        <li>Exclusive VIP lounges</li>
+        <li>Neon aesthetic and immersive sound design</li>
       </ul>
+      <p>Get ready to dance the night away—or start a brawl.</p>
     `
   },
   14: {
-    category: "news",
-    categoryName: "NEWS",
-    title: "Jack of Hearts: Everything About the New Nightclub in GTA 6",
-    date: "Sep 15, 2026",
+    category: "official",
+    categoryName: "OFFICIAL",
+    title: "Behind Bars: A New Story Begins",
+    date: "Jun 15, 2026",
     comments: 89,
-    image: "Boobie_Ike_04.jpg",
+    image: "2810019F-93D7-4424-833E-112CC9D5E6D6.png",
     content: `
-      <p>A new nightclub called "Jack of Hearts" will appear in GTA 6. It is located in the Crosstown neighborhood of Vice City and is owned by Boobie Ike, a local businessman and former street dealer.</p>
-      <p>The club is described as a popular adult venue, and speculation suggests it could play a key role in the story, similar to "Mission Row" in previous titles. This is one of several confirmed nightlife spots in the game.</p>
-      <h2>What We Know</h2>
-      <ul>
-        <li>Location: Crosstown, Vice City</li>
-        <li>Owner: Boobie Ike</li>
-        <li>Type: Strip club</li>
-      </ul>
+      <p>Every great story has to start somewhere. For one of the main protagonists, the journey begins behind bars at the state penitentiary.</p>
+      <p>This new look inside the prison shows a harsh, unforgiving environment. The lighting and shadows create a heavy atmosphere, hinting at the struggles the character has faced and the motivations that will drive them upon release.</p>
+      <h2>The Journey Ahead</h2>
+      <p>What happens within these walls will likely set the stage for the entire narrative. Will the protagonist seek revenge, or just try to survive?</p>
+      <p>Stay tuned for more story reveals.</p>
     `
   },
   15: {
     category: "community",
     categoryName: "COMMUNITY",
-    title: "Jason and Lucia's Real Apartment Found: Belmar Condominium",
-    date: "Aug 30, 2026",
+    title: "Two Wheels: Street Racing and Motorcycles",
+    date: "Jun 10, 2026",
     comments: 210,
-    image: "Vice_City_09.jpg",
+    image: "4E2B8D50-07B8-4F03-941A-F634246B37E8.png",
     content: `
-      <p>Fans have managed to find the real building that served as inspiration for Jason and Lucia's apartment in GTA 6. It is the "Belmar Condominium" in Miami, which, interestingly, was demolished during the game's development.</p>
-      <p>Although the building was removed in 2022, its view of Biscayne Bay and room layout are nearly identical to those seen in the trailer. This discovery further confirms Rockstar's attention to detail.</p>
-      <h2>Details</h2>
+      <p>Traffic is just an obstacle to overcome. The streets of the city are packed with cars, but true speed demons prefer two wheels.</p>
+      <p>Motorcycles are back and better than ever. With dense urban traffic and sprawling highways, riding a bike is the fastest way to get from point A to point B. Expect to pull off high-speed wheelies and weave through tight gaps.</p>
+      <h2>Bike Culture</h2>
       <ul>
-        <li>Building: Belmar Condominium, Miami</li>
-        <li>Demolished: 2022</li>
-        <li>View: Biscayne Bay</li>
+        <li>Multiple motorcycle classes</li>
+        <li>Customization options</li>
+        <li>Dynamic traffic AI</li>
       </ul>
+      <p>Just try not to crash!</p>
     `
   },
   16: {
     category: "news",
     categoryName: "NEWS",
-    title: "Street Scene: Bicycles and Motorcycles in GTA 6",
-    date: "Jul 5, 2026",
+    title: "Luxury Living: Waterfront Properties",
+    date: "Jun 5, 2026",
     comments: 67,
-    image: "Vice_City_10.jpg",
+    image: "5B13CE10-6A5E-42A7-A71A-96708FA38954.png",
     content: `
-      <p>New GTA 6 footage confirms that bicycles and motorcycles will be an important part of traffic. The trailer shows a civilian riding a bicycle in a dedicated lane, while groups of bikers can be spotted on the streets.</p>
-      <p>Additionally, AI motorcycle riders will now dynamically overtake slower vehicles, adding to the realism. Electric bicycles are also expected, which is a first for the series.</p>
-      <h2>New Details</h2>
+      <p>Crime pays—especially if you know where to invest. The main characters can look forward to moving up in the world, quite literally.</p>
+      <p>New screenshots show stunning luxury waterfront properties with glass balconies, private docks, and breathtaking sunset views of the skyline. These safehouses are the ultimate flex for any successful criminal empire.</p>
+      <h2>Property Features</h2>
       <ul>
-        <li>Bicycle lanes</li>
-        <li>Groups of bikers on the streets</li>
-        <li>Dynamic overtaking by AI riders</li>
-        <li>Electric bicycles</li>
+        <li>Private yacht docking</li>
+        <li>Infinity pools with city views</li>
+        <li>High-end interior design</li>
       </ul>
+      <p>Time to start saving those in-game dollars.</p>
     `
   },
   17: {
-    category: "rumors",
-    categoryName: "RUMORS",
-    title: "Lucia's Story: Prison Scene and the Start of the Game",
-    date: "Aug 27, 2026",
+    category: "updates",
+    categoryName: "UPDATE",
+    title: "Downtown: The Concrete Jungle",
+    date: "Jun 1, 2026",
     comments: 312,
-    image: "Lucia_Caminos_05.jpg",
+    image: "92BAE1A7-6F55-44A6-A94A-D3C928CE8BEA.png",
     content: `
-      <p>According to a new leak, GTA 6 will begin with a prison scene in Leonida, where we see Lucia. It is speculated that this serves as an intro to the story, with flashbacks showing her life before her arrest.</p>
-      <p>There are theories that Lucia makes a deal with the authorities to get out of prison, which could involve betraying her partner Jason. Rockstar has not yet commented on these claims.</p>
-      <h2>Details from the Leak</h2>
+      <p>The city center is the beating heart of the metropolis. Massive skyscrapers, busy avenues, and the constant hum of traffic define this district.</p>
+      <p>This area is perfect for high-stakes heists and fast-paced chases. With elevated train tracks cutting through the skyline and hundreds of cars on the road, navigating downtown is an adventure in itself.</p>
+      <h2>What's Downtown?</h2>
       <ul>
-        <li>Game begins in a Leonida prison</li>
-        <li>Flashbacks of Lucia's life before her arrest</li>
-        <li>Possible deal with the authorities</li>
+        <li>Corporate headquarters and banks</li>
+        <li>Major intersections and highways</li>
+        <li>High density of pedestrians and vehicles</li>
       </ul>
+      <p>Explore every alley and rooftop to find the best shortcuts.</p>
     `
-  }
+  },
 };
