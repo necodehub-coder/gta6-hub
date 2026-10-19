@@ -1,4 +1,5 @@
-alert("Fajl je uspešno učitan!");
+alert("Fajl radi!"); // Ovo obriši kasnije
+
 const vehiclesData = {
   1: {
     name: "V8 Classic",
@@ -35,8 +36,7 @@ const vehiclesData = {
     category: "cars",
     categoryName: "CAR · CONVERTIBLE",
     image: "65D63DD5-FD97-45A1-AD09-A0144ACDC2E7.png"
-  }
-};
+  },
   7: {
     name: "Wyman Collection #5",
     category: "cars",
