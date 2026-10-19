@@ -15,7 +15,7 @@ const vehiclesData = {
     name: "Neon GT",
     category: "cars",
     categoryName: "CAR · SPORTS",
-    image: "2F4FCBD6-880C-4E5B-8E70-08C3AAA77811.png"
+    image: "vehicles/2F4FCBD6-880C-4E5B-8E70-08C3AAA77811.png"
   },
   4: {
     name: "Retro Cruiser",
