@@ -9,13 +9,13 @@ const vehiclesData = {
     name: "Ocean Cruiser",
     category: "boats",
     categoryName: "BOAT · SPEEDBOAT",
-    image: "vehicles/C82EB21D-21A1-4280-91DF-8F117DF9DD2D.png"
+    image: "C82EB21D-21A1-4280-91DF-8F117DF9DD2D.png"
   },
   3: {
     name: "Neon GT",
     category: "cars",
     categoryName: "CAR · SPORTS",
-    image: "vehicles/2F4FCBD6-880C-4E5B-8E70-08C3AAA77811.png"
+    image: "2F4FCBD6-880C-4E5B-8E70-08C3AAA77811.png"
   },
   4: {
     name: "Retro Cruiser",
