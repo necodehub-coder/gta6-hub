@@ -1,5 +1,4 @@
 const vehiclesData = {
-const vehiclesData = {
   1: {
     name: "V8 Classic",
     category: "cars",
@@ -35,7 +34,7 @@ const vehiclesData = {
     category: "cars",
     categoryName: "CAR · CONVERTIBLE",
     image: "65D63DD5-FD97-45A1-AD09-A0144ACDC2E7.png"
-  
+  }
 };
   7: {
     name: "Wyman Collection #5",
