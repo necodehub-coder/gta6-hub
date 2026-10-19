@@ -1,5 +1,3 @@
-alert("Fajl radi!"); // Ovo obriši kasnije
-
 const vehiclesData = {
   1: {
     name: "V8 Classic",
@@ -36,35 +34,5 @@ const vehiclesData = {
     category: "cars",
     categoryName: "CAR · CONVERTIBLE",
     image: "65D63DD5-FD97-45A1-AD09-A0144ACDC2E7.png"
-  },
-  7: {
-    name: "Wyman Collection #5",
-    category: "cars",
-    categoryName: "CAR · COLLECTION",
-    image: "ULTIMATE_EDITION_WYMAN_CAR_COLLECTION_05.jpg"
-  },
-  8: {
-    name: "Wyman Collection #6",
-    category: "cars",
-    categoryName: "CAR · COLLECTION",
-    image: "ULTIMATE_EDITION_WYMAN_CAR_COLLECTION_06.jpg"
-  },
-  9: {
-    name: "Vapid Buggy #1",
-    category: "cars",
-    categoryName: "CAR · OFF-ROAD",
-    image: "ULTIMATE_EDITION_VAPID_BUGGY_01.jpg"
-  },
-  10: {
-    name: "Vapid Buggy #4",
-    category: "cars",
-    categoryName: "CAR · OFF-ROAD",
-    image: "ULTIMATE_EDITION_VAPID_BUGGY_04.jpg"
-  },
-  11: {
-    name: "Vapid Stanier",
-    category: "cars",
-    categoryName: "CAR · SEDAN",
-    image: "VINTAGE_VICE_CITY_PACK_VAPID_STANIER_01.jpg"
   }
 };
