@@ -1,40 +1,42 @@
 const vehiclesData = {
+const vehiclesData = {
   1: {
-    name: "Vapid Ganado Retro Build",
+    name: "V8 Classic",
     category: "cars",
-    categoryName: "CAR · RETRO",
-    image: "ULTIMATE_EDITION_VAPID_GANADO_RETRO_BUILD_01.jpg"
+    categoryName: "CAR · MUSCLE",
+    image: "ECC0A783-857D-4753-9AA8-8CC8D8E480F4.png"
   },
   2: {
-    name: "Squalo",
+    name: "Ocean Cruiser",
     category: "boats",
     categoryName: "BOAT · SPEEDBOAT",
-    image: "ULTIMATE_EDITION_SQUALO_02.jpg"
+    image: "C82EB21D-21A1-4280-91DF-8F117DF9DD2D.png"
   },
   3: {
-    name: "Grotti Cheetah",
+    name: "Neon GT",
     category: "cars",
-    categoryName: "CAR · SUPER",
-    image: "ULTIMATE_EDITION_GROTTI_CHEETAH_02.jpg"
+    categoryName: "CAR · SPORTS",
+    image: "2F4FCBD6-880C-4E5B-8E70-08C3AAA77811.png"
   },
   4: {
-    name: "Wyman Collection #2",
+    name: "Retro Cruiser",
     category: "cars",
-    categoryName: "CAR · COLLECTION",
-    image: "ULTIMATE_EDITION_WYMAN_CAR_COLLECTION_02.jpg"
+    categoryName: "CAR · CLASSIC",
+    image: "EBE3474A-F106-4D06-A90A-8383F516493B.png"
   },
   5: {
-    name: "Wyman Collection #3",
+    name: "Trailblazer",
     category: "cars",
-    categoryName: "CAR · COLLECTION",
-    image: "ULTIMATE_EDITION_WYMAN_CAR_COLLECTION_03.jpg"
+    categoryName: "CAR · OFF-ROAD",
+    image: "7F330FAC-21D2-45A9-AA72-7EC96312FAF2.png"
   },
   6: {
-    name: "Wyman Collection #4",
+    name: "Crimson Roadster",
     category: "cars",
-    categoryName: "CAR · COLLECTION",
-    image: "ULTIMATE_EDITION_WYMAN_CAR_COLLECTION_04.jpg"
-  },
+    categoryName: "CAR · CONVERTIBLE",
+    image: "65D63DD5-FD97-45A1-AD09-A0144ACDC2E7.png"
+  
+};
   7: {
     name: "Wyman Collection #5",
     category: "cars",
