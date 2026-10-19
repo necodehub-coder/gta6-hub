@@ -1,3 +1,4 @@
+alert("Fajl je uspešno učitan!");
 const vehiclesData = {
   1: {
     name: "V8 Classic",
