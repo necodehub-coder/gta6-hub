@@ -102,13 +102,14 @@
         <button class="c-filter-btn" data-filter="supporting">SUPPORTING</button>
         <button class="c-filter-btn" data-filter="antagonist">ANTAGONISTS</button>
       </div>
+    </div>
 
     <!-- CHARACTERS GRID -->
     <section class="characters-grid-section">
       <div class="characters-grid">
 
         <!-- CHARACTER 1 -->
-        <div class="char-card">
+        <div class="char-card" data-category="protagonist">
           <div class="char-tag protagonist">PROTAGONIST</div>
           <h3>The Drifter</h3>
           <p>A man trying to leave his past behind, but the city keeps pulling him back in. Loyal to a fault, he prefers to let his actions speak louder than words.</p>
@@ -119,7 +120,7 @@
         </div>
 
         <!-- CHARACTER 2 -->
-        <div class="char-card">
+        <div class="char-card" data-category="protagonist">
           <div class="char-tag protagonist">PROTAGONIST</div>
           <h3>The Firecracker</h3>
           <p>Driven by a desire for freedom and a bigger score. She's the brains of the operation, always three steps ahead and never afraid to pull the trigger.</p>
@@ -130,7 +131,7 @@
         </div>
 
         <!-- CHARACTER 3 -->
-        <div class="char-card">
+        <div class="char-card" data-category="supporting">
           <div class="char-tag supporting">SUPPORTING</div>
           <h3>The Fixer</h3>
           <p>If you need something done, you call him. He knows everyone, owes favors to everyone, and always takes his cut. A vital ally, but a dangerous enemy.</p>
@@ -141,7 +142,7 @@
         </div>
 
         <!-- CHARACTER 4 -->
-        <div class="char-card">
+        <div class="char-card" data-category="antagonist">
           <div class="char-tag antagonist">ANTAGONIST</div>
           <h3>The Kingpin</h3>
           <p>He runs the docks, the clubs, and the shadows in between. Nobody moves without his say-so. Cross him, and you'll find yourself sleeping with the alligators.</p>
@@ -152,7 +153,7 @@
         </div>
 
         <!-- CHARACTER 5 -->
-        <div class="char-card">
+        <div class="char-card" data-category="supporting">
           <div class="char-tag supporting">SUPPORTING</div>
           <h3>The Hacker</h3>
           <p>A ghost in the machine. She can clear a police record in seconds or empty a bank account from a coffee shop. She doesn't carry a gun, but she doesn't need to.</p>
@@ -163,7 +164,7 @@
         </div>
 
         <!-- CHARACTER 6 -->
-        <div class="char-card">
+        <div class="char-card" data-category="antagonist">
           <div class="char-tag antagonist">ANTAGONIST</div>
           <h3>The Detective</h3>
           <p>A relentless cop with a personal vendetta. He's the only one who seems to understand the chaos brewing in the city, and he'll break every rule to stop it.</p>
@@ -195,29 +196,32 @@
     <small>PALMS</small>
   </div>
 </footer>
+
+<!-- FILTER SCRIPT -->
 <script>
   const cFilterButtons = document.querySelectorAll('.c-filter-btn');
   const charCards = document.querySelectorAll('.char-card');
 
   cFilterButtons.forEach(button => {
     button.addEventListener('click', () => {
-      // Ukloni 'active' sa svih dugmića
+      // Ukloni 'active' klasu sa svih dugmića
       cFilterButtons.forEach(btn => btn.classList.remove('active'));
-      // Dodaj 'active' na kliknuti
+      // Dodaj 'active' klasu na kliknuti dugmić
       button.classList.add('active');
 
       const filterValue = button.dataset.filter;
 
-      // Prođi kroz sve kartice i prikaži/sakrij
+      // Prođi kroz sve kartice
       charCards.forEach(card => {
         if (filterValue === 'all' || card.dataset.category === filterValue) {
-          card.style.display = 'flex'; // flex jer je to originalni CSS
+          card.style.display = 'flex'; // Prikaži
         } else {
-          card.style.display = 'none';
+          card.style.display = 'none'; // Sakrij
         }
       });
     });
   });
 </script>
+
 </body>
 </html>
