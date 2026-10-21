@@ -97,12 +97,11 @@
     <!-- FILTERS -->
     <div class="characters-controls">
       <div class="characters-filters">
-        <button class="c-filter-btn active">ALL</button>
-        <button class="c-filter-btn">PROTAGONISTS</button>
-        <button class="c-filter-btn">SUPPORTING</button>
-        <button class="c-filter-btn">ANTAGONISTS</button>
+        <button class="c-filter-btn active" data-filter="all">ALL</button>
+        <button class="c-filter-btn" data-filter="protagonist">PROTAGONISTS</button>
+        <button class="c-filter-btn" data-filter="supporting">SUPPORTING</button>
+        <button class="c-filter-btn" data-filter="antagonist">ANTAGONISTS</button>
       </div>
-    </div>
 
     <!-- CHARACTERS GRID -->
     <section class="characters-grid-section">
@@ -196,6 +195,29 @@
     <small>PALMS</small>
   </div>
 </footer>
+<script>
+  const cFilterButtons = document.querySelectorAll('.c-filter-btn');
+  const charCards = document.querySelectorAll('.char-card');
 
+  cFilterButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      // Ukloni 'active' sa svih dugmića
+      cFilterButtons.forEach(btn => btn.classList.remove('active'));
+      // Dodaj 'active' na kliknuti
+      button.classList.add('active');
+
+      const filterValue = button.dataset.filter;
+
+      // Prođi kroz sve kartice i prikaži/sakrij
+      charCards.forEach(card => {
+        if (filterValue === 'all' || card.dataset.category === filterValue) {
+          card.style.display = 'flex'; // flex jer je to originalni CSS
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    });
+  });
+</script>
 </body>
 </html>
