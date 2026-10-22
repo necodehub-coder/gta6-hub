@@ -2,11 +2,17 @@
 .weapons-hero {
   position: relative;
   margin: 20px 30px;
-  padding: 60px 50px;
-  background: linear-gradient(135deg, rgba(10, 5, 20, 0.9), rgba(255, 76, 76, 0.15));
+  padding: 70px 50px;
+  background:
+    linear-gradient(135deg, rgba(10, 5, 20, 0.85), rgba(10, 5, 20, 0.4)),
+    url("E0915850-3487-4ED8-833C-CFBC0619F185.png") center / cover no-repeat;
   border: 1px solid rgba(255, 76, 164, 0.3);
   border-radius: 16px;
   overflow: hidden;
+  min-height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .weapons-hero .hero-tag {
